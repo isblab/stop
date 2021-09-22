@@ -1,0 +1,948 @@
+Mon Sep 20 21:11:47 2021 ::  LOGGER  ::    STATUS     ::Initialized
+Mon Sep 20 21:11:47 2021 ::  LOGGER  ::    STATUS     ::Starting to listen for logging requests.
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    STATUS     ::Initialized
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Total parameter groups = 99
+Mon Sep 20 21:11:47 2021 :: EXECUTOR ::    STATUS     ::Initialized
+Mon Sep 20 21:11:47 2021 :: EXECUTOR ::    STATUS     ::Starting to listen for jobs
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 0= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 1= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 2= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 3= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 4= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 5= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 6= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 7= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 8= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 9= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 10= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 11= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 12= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 13= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 14= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 15= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 16= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 17= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 18= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 19= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 20= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 21= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 22= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 23= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 24= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 25= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 26= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 27= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 28= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 29= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 30= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 31= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 32= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 33= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 34= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 35= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 36= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 37= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 38= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 39= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 40= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 41= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 42= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 43= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 44= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 45= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 46= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 47= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 48= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 49= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 50= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 51= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 52= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 53= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 54= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 55= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 56= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 57= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 58= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 59= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 60= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 61= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 62= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 63= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 64= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 65= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 66= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 67= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 68= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 69= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 70= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 71= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 72= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 73= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 74= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 75= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 76= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 77= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 78= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 79= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 80= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 81= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 82= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 83= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 84= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 85= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 86= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 87= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 88= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 89= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 90= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 91= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 92= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 93= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 94= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 95= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 96= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 97= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 98= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Parameter Group 99= 2 params 1 metrics
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::     INFO      ::Initial setup complete
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 0
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 1
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 2
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 3
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 4
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 5
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 6
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 7
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 8
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 9
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 10
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 11
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 12
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 13
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 14
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 15
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 16
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 17
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 18
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 19
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 20
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 21
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 22
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 23
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 24
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 25
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 26
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 27
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 28
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 29
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 30
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 31
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 32
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 33
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 34
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 35
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 36
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 37
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 38
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 39
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 40
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 41
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 42
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 43
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 44
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 45
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 46
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 47
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 48
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 49
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 50
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 51
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 52
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 53
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 54
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 55
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 56
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 57
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 58
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 59
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 60
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 61
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 62
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 63
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 64
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 65
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 66
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 67
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 68
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 69
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 70
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 71
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 72
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 73
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 74
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 75
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 76
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 77
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 78
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 79
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 80
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 81
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 82
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 83
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 84
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 85
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 86
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 87
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 88
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 89
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 90
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 91
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 92
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 93
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 94
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 95
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 96
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 97
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 98
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 99
+Mon Sep 20 21:11:47 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::     INFO      ::A new block loaded of size 25
+Mon Sep 20 21:11:47 2021 ::OPTIMIZER ::    STATUS     ::Awaiting progress and results
+Mon Sep 20 21:11:48 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:49 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:49 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:49 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 0_0
+Mon Sep 20 21:11:49 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:49 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:49 2021 ::OPTIMIZER ::     INFO      ::Finished 0_0 with exit code 0
+Mon Sep 20 21:11:50 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:50 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:50 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 1_0
+Mon Sep 20 21:11:50 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:50 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:50 2021 ::OPTIMIZER ::     INFO      ::Finished 1_0 with exit code 0
+Mon Sep 20 21:11:51 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:51 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 2_0
+Mon Sep 20 21:11:51 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:51 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:51 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:51 2021 ::OPTIMIZER ::     INFO      ::Finished 2_0 with exit code 0
+Mon Sep 20 21:11:52 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:52 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:52 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 3_0
+Mon Sep 20 21:11:52 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:52 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:52 2021 ::OPTIMIZER ::     INFO      ::Finished 3_0 with exit code 0
+Mon Sep 20 21:11:53 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:53 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:53 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 4_0
+Mon Sep 20 21:11:53 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:53 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:53 2021 ::OPTIMIZER ::     INFO      ::Finished 4_0 with exit code 0
+Mon Sep 20 21:11:54 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:11:54 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:55 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:55 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:55 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 5_0
+Mon Sep 20 21:11:55 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:55 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:55 2021 ::OPTIMIZER ::     INFO      ::Finished 5_0 with exit code 0
+Mon Sep 20 21:11:56 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:56 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:56 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 6_0
+Mon Sep 20 21:11:56 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:56 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:56 2021 ::OPTIMIZER ::     INFO      ::Finished 6_0 with exit code 0
+Mon Sep 20 21:11:57 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:57 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:57 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 7_0
+Mon Sep 20 21:11:57 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:57 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:57 2021 ::OPTIMIZER ::     INFO      ::Finished 7_0 with exit code 0
+Mon Sep 20 21:11:58 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:11:58 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:59 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:11:59 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:11:59 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 8_0
+Mon Sep 20 21:11:59 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:11:59 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:11:59 2021 ::OPTIMIZER ::     INFO      ::Finished 8_0 with exit code 0
+Mon Sep 20 21:12:00 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:00 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:00 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 9_0
+Mon Sep 20 21:12:00 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:00 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:00 2021 ::OPTIMIZER ::     INFO      ::Finished 9_0 with exit code 0
+Mon Sep 20 21:12:01 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:01 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:01 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 10_0
+Mon Sep 20 21:12:01 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:01 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:01 2021 ::OPTIMIZER ::     INFO      ::Finished 10_0 with exit code 0
+Mon Sep 20 21:12:02 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:02 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:03 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:03 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:03 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 11_0
+Mon Sep 20 21:12:03 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:03 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:03 2021 ::OPTIMIZER ::     INFO      ::Finished 11_0 with exit code 0
+Mon Sep 20 21:12:04 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:04 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:04 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 12_0
+Mon Sep 20 21:12:04 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:04 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:04 2021 ::OPTIMIZER ::     INFO      ::Finished 12_0 with exit code 0
+Mon Sep 20 21:12:05 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:05 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:06 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:06 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:06 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 13_0
+Mon Sep 20 21:12:06 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:06 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:06 2021 ::OPTIMIZER ::     INFO      ::Finished 13_0 with exit code 0
+Mon Sep 20 21:12:07 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:07 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:07 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 14_0
+Mon Sep 20 21:12:07 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:07 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:07 2021 ::OPTIMIZER ::     INFO      ::Finished 14_0 with exit code 0
+Mon Sep 20 21:12:08 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:08 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:08 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 15_0
+Mon Sep 20 21:12:08 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:08 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:08 2021 ::OPTIMIZER ::     INFO      ::Finished 15_0 with exit code 0
+Mon Sep 20 21:12:09 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:09 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:09 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 16_0
+Mon Sep 20 21:12:09 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:09 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:09 2021 ::OPTIMIZER ::     INFO      ::Finished 16_0 with exit code 0
+Mon Sep 20 21:12:10 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:10 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:11 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:11 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:11 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:11 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:11 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 17_0
+Mon Sep 20 21:12:11 2021 ::OPTIMIZER ::     INFO      ::Finished 17_0 with exit code 0
+Mon Sep 20 21:12:12 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:12 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:12 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 18_0
+Mon Sep 20 21:12:12 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:12 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:12 2021 ::OPTIMIZER ::     INFO      ::Finished 18_0 with exit code 0
+Mon Sep 20 21:12:13 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:13 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:14 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:14 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:14 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 19_0
+Mon Sep 20 21:12:14 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:14 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:14 2021 ::OPTIMIZER ::     INFO      ::Finished 19_0 with exit code 0
+Mon Sep 20 21:12:15 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:15 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:15 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 20_0
+Mon Sep 20 21:12:15 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:15 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:15 2021 ::OPTIMIZER ::     INFO      ::Finished 20_0 with exit code 0
+Mon Sep 20 21:12:16 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:16 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:17 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:17 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:17 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 21_0
+Mon Sep 20 21:12:17 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:17 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:17 2021 ::OPTIMIZER ::     INFO      ::Finished 21_0 with exit code 0
+Mon Sep 20 21:12:18 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:18 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:18 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 22_0
+Mon Sep 20 21:12:18 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:18 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:18 2021 ::OPTIMIZER ::     INFO      ::Finished 22_0 with exit code 0
+Mon Sep 20 21:12:19 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:19 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:19 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 23_0
+Mon Sep 20 21:12:19 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:19 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:19 2021 ::OPTIMIZER ::     INFO      ::Finished 23_0 with exit code 0
+Mon Sep 20 21:12:20 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:20 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 24_0
+Mon Sep 20 21:12:20 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Finished 24_0 with exit code 0
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Starting to analyze 25 results
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Finished analysis
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Cleaning stuff
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::    STATUS     ::Finished handling the last block
+Mon Sep 20 21:12:20 2021 ::OPTIMIZER ::     INFO      ::Updating for parameter-group states and DFS trees
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 0
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 1
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 2
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 5
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 9
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 10
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 13
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 14
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 15
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 18
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 21
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 23
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 24
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 26
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 27
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 28
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 29
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 30
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 31
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 32
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 33
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 34
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 37
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 38
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 39
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 40
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 41
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 42
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 44
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 46
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 48
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 49
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 50
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 51
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 53
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 54
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 57
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 59
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 60
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 62
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 63
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 64
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 67
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 68
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 70
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 71
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 72
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 73
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 74
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 75
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 76
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 77
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 78
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 80
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 81
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 82
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 83
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 85
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 87
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 88
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 90
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 91
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 92
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 93
+Mon Sep 20 21:12:21 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 94
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 95
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 96
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 97
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 98
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 99
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group3
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group4
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group6
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group7
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group8
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group11
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group12
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group16
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group17
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group19
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group20
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group22
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group25
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group35
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group36
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group43
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group45
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group47
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group52
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group55
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group56
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group58
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group61
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group65
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group66
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group69
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group79
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group84
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group86
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group89
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::     INFO      ::A new block loaded of size 5
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::    STATUS     ::Awaiting progress and results
+Mon Sep 20 21:12:21 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:21 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 25_0
+Mon Sep 20 21:12:21 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:21 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:21 2021 ::OPTIMIZER ::     INFO      ::Finished 25_0 with exit code 0
+Mon Sep 20 21:12:22 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:22 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:23 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:23 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:23 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 26_0
+Mon Sep 20 21:12:23 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:23 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:23 2021 ::OPTIMIZER ::     INFO      ::Finished 26_0 with exit code 0
+Mon Sep 20 21:12:24 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:24 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:24 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 27_0
+Mon Sep 20 21:12:24 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:24 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:24 2021 ::OPTIMIZER ::     INFO      ::Finished 27_0 with exit code 0
+Mon Sep 20 21:12:25 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:25 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:26 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:26 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:26 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 28_0
+Mon Sep 20 21:12:26 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:26 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:26 2021 ::OPTIMIZER ::     INFO      ::Finished 28_0 with exit code 0
+Mon Sep 20 21:12:27 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:27 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 29_0
+Mon Sep 20 21:12:27 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Finished 29_0 with exit code 0
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Starting to analyze 5 results
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Finished analysis
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Cleaning stuff
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    STATUS     ::Finished handling the last block
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::Updating for parameter-group states and DFS trees
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 0
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 1
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 5
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 9
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 10
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 13
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 14
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 15
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 18
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 21
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 23
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 24
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 26
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 27
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 28
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 29
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 30
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 31
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 32
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 37
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 38
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 39
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 40
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 41
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 42
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 44
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 48
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 49
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 50
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 51
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 53
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 54
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 60
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 62
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 63
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 64
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 67
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 68
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 70
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 71
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 72
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 74
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 75
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 77
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 78
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 80
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 81
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 82
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 85
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 88
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 90
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 91
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 92
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 93
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 94
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 95
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 96
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 97
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 98
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 99
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group2
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group3
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group4
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group6
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group7
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group8
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group11
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group12
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group16
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group17
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group19
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group20
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group22
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group25
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group33
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group34
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group35
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group36
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group43
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group45
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group46
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group47
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group52
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group55
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group56
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group57
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group58
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group59
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group61
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group65
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group66
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group69
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group73
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group76
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group79
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group83
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group84
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group86
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group87
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group89
+Mon Sep 20 21:12:27 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::     INFO      ::A new block loaded of size 5
+Mon Sep 20 21:12:27 2021 ::OPTIMIZER ::    STATUS     ::Awaiting progress and results
+Mon Sep 20 21:12:28 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:28 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:28 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 30_0
+Mon Sep 20 21:12:28 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:28 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:28 2021 ::OPTIMIZER ::     INFO      ::Finished 30_0 with exit code 0
+Mon Sep 20 21:12:29 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:29 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:30 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:30 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:30 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 31_0
+Mon Sep 20 21:12:30 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:30 2021 ::OPTIMIZER ::     INFO      ::Finished 31_0 with exit code 0
+Mon Sep 20 21:12:30 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:31 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:31 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:31 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 32_0
+Mon Sep 20 21:12:31 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:31 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:31 2021 ::OPTIMIZER ::     INFO      ::Finished 32_0 with exit code 0
+Mon Sep 20 21:12:32 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:32 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:32 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:32 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:32 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 33_0
+Mon Sep 20 21:12:32 2021 ::OPTIMIZER ::     INFO      ::Finished 33_0 with exit code 0
+Mon Sep 20 21:12:33 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:33 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:34 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:34 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 34_0
+Mon Sep 20 21:12:34 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Finished 34_0 with exit code 0
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Starting to analyze 5 results
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Finished analysis
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Cleaning stuff
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    STATUS     ::Finished handling the last block
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::Updating for parameter-group states and DFS trees
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 5
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 10
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 21
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 23
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 26
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 27
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 31
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 38
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 42
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 44
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 49
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 50
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 51
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 53
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 60
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 62
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 64
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 67
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 70
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 74
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 78
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 80
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 82
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 85
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 88
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 90
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 91
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 92
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 93
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 95
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 96
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 97
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 98
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 99
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group0
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group1
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group2
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group3
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group4
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group6
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group7
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group8
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group9
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group11
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group12
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group13
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group14
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group15
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group16
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group17
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group18
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group19
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group20
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group22
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group24
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group25
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group28
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group29
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group30
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group32
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group33
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group34
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group35
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group36
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group37
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group39
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group40
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group41
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group43
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group45
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group46
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group47
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group48
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group52
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group54
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group55
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group56
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group57
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group58
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group59
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group61
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group63
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group65
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group66
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group68
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group69
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group71
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group72
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group73
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group75
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group76
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group77
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group79
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group81
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group83
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group84
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group86
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group87
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group89
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group94
+Mon Sep 20 21:12:34 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::     INFO      ::A new block loaded of size 5
+Mon Sep 20 21:12:34 2021 ::OPTIMIZER ::    STATUS     ::Awaiting progress and results
+Mon Sep 20 21:12:35 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:35 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:35 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 35_0
+Mon Sep 20 21:12:35 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:35 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:35 2021 ::OPTIMIZER ::     INFO      ::Finished 35_0 with exit code 0
+Mon Sep 20 21:12:36 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:36 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:37 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:37 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:37 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 36_0
+Mon Sep 20 21:12:37 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:37 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:37 2021 ::OPTIMIZER ::     INFO      ::Finished 36_0 with exit code 0
+Mon Sep 20 21:12:38 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:38 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:38 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 37_0
+Mon Sep 20 21:12:38 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:38 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:38 2021 ::OPTIMIZER ::     INFO      ::Finished 37_0 with exit code 0
+Mon Sep 20 21:12:39 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:39 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:39 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 38_0
+Mon Sep 20 21:12:39 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:39 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:39 2021 ::OPTIMIZER ::     INFO      ::Finished 38_0 with exit code 0
+Mon Sep 20 21:12:40 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:40 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:41 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:41 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 39_0
+Mon Sep 20 21:12:41 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Finished 39_0 with exit code 0
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Starting to analyze 5 results
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Finished analysis
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Cleaning stuff
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    STATUS     ::Finished handling the last block
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::Updating for parameter-group states and DFS trees
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 78
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Loading a new set of runs from param-group 99
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group0
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group1
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group2
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group3
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group4
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group5
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group6
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group7
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group8
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group9
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group10
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group11
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group12
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group13
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group14
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group15
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group16
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group17
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group18
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group19
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group20
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group21
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group22
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group23
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group24
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group25
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group26
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group27
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group28
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group29
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group30
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group31
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group32
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group33
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group34
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group35
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group36
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group37
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group38
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group39
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group40
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group41
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group42
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group43
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group44
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group45
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group46
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group47
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group48
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group49
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group50
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group51
+Mon Sep 20 21:12:41 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group52
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group53
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group54
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group55
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group56
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group57
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group58
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group59
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group60
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group61
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group62
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group63
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group64
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group65
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group66
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group67
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group68
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group69
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group70
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group71
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group72
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group73
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group74
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group75
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group76
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group77
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group79
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group80
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group81
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group82
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group83
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group84
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group85
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group86
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group87
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group88
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group89
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group90
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group91
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group92
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group93
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group94
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group95
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group96
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group97
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    DETAILS    ::Using optimized values for param-group98
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::     INFO      ::A new block loaded of size 5
+Mon Sep 20 21:12:41 2021 ::OPTIMIZER ::    STATUS     ::Awaiting progress and results
+Mon Sep 20 21:12:42 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:42 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:42 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 40_0
+Mon Sep 20 21:12:42 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:42 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:42 2021 ::OPTIMIZER ::     INFO      ::Finished 40_0 with exit code 0
+Mon Sep 20 21:12:43 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:43 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:43 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 41_0
+Mon Sep 20 21:12:43 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:43 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:43 2021 ::OPTIMIZER ::     INFO      ::Finished 41_0 with exit code 0
+Mon Sep 20 21:12:44 2021 ::  LOGGER  ::     INFO      ::Sitting idle. Nothing to do.
+Mon Sep 20 21:12:44 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:45 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:45 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:45 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 42_0
+Mon Sep 20 21:12:45 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:45 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:45 2021 ::OPTIMIZER ::     INFO      ::Finished 42_0 with exit code 0
+Mon Sep 20 21:12:46 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:46 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:46 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 43_0
+Mon Sep 20 21:12:46 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:46 2021 :: EXECUTOR ::     INFO      ::Received a job to run
+Mon Sep 20 21:12:46 2021 ::OPTIMIZER ::     INFO      ::Finished 43_0 with exit code 0
+Mon Sep 20 21:12:47 2021 :: EXECUTOR ::     INFO      ::Running full. Not looking for more jobs.
+Mon Sep 20 21:12:47 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 1
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Received progress report on 44_0
+Mon Sep 20 21:12:47 2021 :: EXECUTOR ::    DETAILS    ::Out of 1 processes 0 are still running
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Finished 44_0 with exit code 0
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Starting to analyze 5 results
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Finished analysis
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Cleaning stuff
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::    STATUS     ::Finished handling the last block
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Updating for parameter-group states and DFS trees
+Mon Sep 20 21:12:47 2021 ::OPTIMIZER ::     INFO      ::Generating report
+Mon Sep 20 21:12:48 2021 :: EXECUTOR ::     INFO      ::No Commands received. 1/1 slots empty
+Mon Sep 20 21:12:48 2021 ::  LOGGER  ::    STATUS     ::Received death signal. Waiting 2 seconds to gather all dying messages.
+Mon Sep 20 21:12:48 2021 :: EXECUTOR ::     INFO      ::Initiating talking to the running processes 0
+Mon Sep 20 21:12:48 2021 :: EXECUTOR ::    DETAILS    ::Out of 0 processes 0 are still running
+Mon Sep 20 21:12:48 2021 :: EXECUTOR ::    STATUS     ::Received death signal. Dying.
+Mon Sep 20 21:12:49 2021 ::  LOGGER  ::    STATUS     ::Dying.

@@ -1,0 +1,1002 @@
+Total Time Taken: 33 seconds
+Total Blocks/Commands loaded: 5/25
+Total Params/Param-groups: 100/100
+Total Metrics: 100
+Parameter Group ID: 0
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 2
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p0: [0.91666667]
+			Metric m0: 0.49370828882347223 (+- 0)
+Parameter Group ID: 1
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p1: [0.41666667]
+			Metric m1: 0.4939917648188283 (+- 0)
+Parameter Group ID: 2
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p2: [0.61111111]
+			Metric m2: 0.49570765000580824 (+- 0)
+Parameter Group ID: 3
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p3: [-0.34722222]
+			Metric m3: 0.48083458439531807 (+- 0)
+Parameter Group ID: 4
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p4: [-0.36111111]
+			Metric m4: 0.4940326891053693 (+- 0)
+Parameter Group ID: 5
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p5: [-0.20833333]
+			Metric m5: 0.4874328834076309 (+- 0)
+Parameter Group ID: 6
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p6: [-0.98611111]
+			Metric m6: 0.49519136388354296 (+- 0)
+Parameter Group ID: 7
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p7: [0.41666667]
+			Metric m7: 0.4992739243992006 (+- 0)
+Parameter Group ID: 8
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p8: [0.25]
+			Metric m8: 0.4828294335663793 (+- 0)
+Parameter Group ID: 9
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p9: [0.83564815 0.83796296 0.84027778]
+			Metric m9: 0.4975734169684529 (+- 0), 0.48970593289247444 (+- 0), 0.48174552714270413 (+- 0)
+Parameter Group ID: 10
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 3
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p10: [-0.80555556 -0.79166667]
+			Metric m10: 0.4979219686234905 (+- 0), 0.484828723153518 (+- 0)
+Parameter Group ID: 11
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p11: [0.11574074 0.11805556 0.12037037 0.12268519]
+			Metric m11: 0.4816288267149808 (+- 0), 0.48631262900034766 (+- 0), 0.4909877412515356 (+- 0), 0.4956541891539655 (+- 0)
+Parameter Group ID: 12
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p12: [0.23611111]
+			Metric m12: 0.49580264211336156 (+- 0)
+Parameter Group ID: 13
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p13: [-0.23611111]
+			Metric m13: 0.4847006192792174 (+- 0)
+Parameter Group ID: 14
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p14: [0.375]
+			Metric m14: 0.49253500774305803 (+- 0)
+Parameter Group ID: 15
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p15: [-0.41666667]
+			Metric m15: 0.4953251406573653 (+- 0)
+Parameter Group ID: 16
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p16: [0.5]
+			Metric m16: 0.4967594527451526 (+- 0)
+Parameter Group ID: 17
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p17: [0.88888889]
+			Metric m17: 0.4875565878789002 (+- 0)
+Parameter Group ID: 18
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p18: [-0.87037037 -0.86805556]
+			Metric m18: 0.4999012900854977 (+- 0), 0.4884851064968636 (+- 0)
+Parameter Group ID: 19
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p19: [-0.30324074 -0.30092593 -0.29861111 -0.2962963 ]
+			Metric m19: 0.49968375785660735 (+- 0), 0.4938238930660606 (+- 0), 0.48797575442524066 (+- 0), 0.4821398309510152 (+- 0)
+Parameter Group ID: 20
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 21
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p21: [-0.01851852]
+			Metric m21: 0.4974103784733728 (+- 0)
+Parameter Group ID: 22
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p22: [0.49074074 0.49305556]
+			Metric m22: 0.48232048183017595 (+- 0), 0.49466663865308 (+- 0)
+Parameter Group ID: 23
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p23: [0.9537037]
+			Metric m23: 0.4867500174287189 (+- 0)
+Parameter Group ID: 24
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p24: [0.05555556]
+			Metric m24: 0.49063675199876877 (+- 0)
+Parameter Group ID: 25
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p25: [0.44212963]
+			Metric m25: 0.48928030572528813 (+- 0)
+Parameter Group ID: 26
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p26: [-0.875]
+			Metric m26: 0.4887941901724653 (+- 0)
+Parameter Group ID: 27
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p27: [0.47453704]
+			Metric m27: 0.49394761080706207 (+- 0)
+Parameter Group ID: 28
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 29
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p29: [-0.30555556]
+			Metric m29: 0.4954561377555143 (+- 0)
+Parameter Group ID: 30
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 2
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p30: [-0.66666667]
+			Metric m30: 0.48227655414329956 (+- 0)
+Parameter Group ID: 31
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 32
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p32: [0.22029321 0.22067901 0.22106481 0.22145062 0.22183642]
+			Metric m32: 0.48310795377957716 (+- 0), 0.48725817471803734 (+- 0), 0.49140638571076617 (+- 0), 0.4955525470834247 (+- 0), 0.4996966191616736 (+- 0)
+Parameter Group ID: 33
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 3
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p33: [-0.25]
+			Metric m33: 0.4883563587154835 (+- 0)
+Parameter Group ID: 34
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p34: [0.48611111]
+			Metric m34: 0.48369164654869684 (+- 0)
+Parameter Group ID: 35
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p35: [-0.55324074]
+			Metric m35: 0.4873090125660398 (+- 0)
+Parameter Group ID: 36
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p36: [-0.25925926]
+			Metric m36: 0.49435413517166904 (+- 0)
+Parameter Group ID: 37
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p37: [-0.4837963]
+			Metric m37: 0.4834427957919123 (+- 0)
+Parameter Group ID: 38
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 3
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p38: [-0.94444444 -0.93055556]
+			Metric m38: 0.49526332856732186 (+- 0), 0.48088679192096845 (+- 0)
+Parameter Group ID: 39
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p39: [-0.35185185]
+			Metric m39: 0.487870872745976 (+- 0)
+Parameter Group ID: 40
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p40: [0.66203704]
+			Metric m40: 0.49306383928015035 (+- 0)
+Parameter Group ID: 41
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 2
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p41: [0.91666667]
+			Metric m41: 0.4999915964388576 (+- 0)
+Parameter Group ID: 42
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p42: [0.10416667 0.10648148]
+			Metric m42: 0.48059541629157965 (+- 0), 0.4951669934322936 (+- 0)
+Parameter Group ID: 43
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p43: [-0.39351852 -0.3912037 ]
+			Metric m43: 0.4989175768866631 (+- 0), 0.48027099659016803 (+- 0)
+Parameter Group ID: 44
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p44: [-0.48842593]
+			Metric m44: 0.48350697786121266 (+- 0)
+Parameter Group ID: 45
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p45: [0.50810185 0.50848765 0.50887346]
+			Metric m45: 0.4850352579596602 (+- 0), 0.49007780634646536 (+- 0), 0.49511463013400275 (+- 0)
+Parameter Group ID: 46
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p46: [-0.63888889]
+			Metric m46: 0.4832267420717549 (+- 0)
+Parameter Group ID: 47
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 48
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p48: [-0.375]
+			Metric m48: 0.49372878128049624 (+- 0)
+Parameter Group ID: 49
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p49: [-0.75925926 -0.75694444]
+			Metric m49: 0.48953778189023645 (+- 0), 0.4994010730692097 (+- 0)
+Parameter Group ID: 50
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 51
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p51: [-0.56018519 -0.55787037]
+			Metric m51: 0.4818536365501131 (+- 0), 0.49108645476034873 (+- 0)
+Parameter Group ID: 52
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p52: [0.24305556 0.24537037 0.24768519]
+			Metric m52: 0.4816506571625498 (+- 0), 0.48994708675883647 (+- 0), 0.498153602354909 (+- 0)
+Parameter Group ID: 53
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 54
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p54: [-0.05787037]
+			Metric m54: 0.48465390944011966 (+- 0)
+Parameter Group ID: 55
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 56
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p56: [-0.67824074]
+			Metric m56: 0.48624715384592904 (+- 0)
+Parameter Group ID: 57
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 58
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p58: [0.65972222 0.66203704 0.66435185]
+			Metric m58: 0.4939239752692577 (+- 0), 0.48692740844745447 (+- 0), 0.48010253471358244 (+- 0)
+Parameter Group ID: 59
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p59: [-0.70601852]
+			Metric m59: 0.49453750159421417 (+- 0)
+Parameter Group ID: 60
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p60: [0.20679012 0.20717593 0.20756173 0.20794753]
+			Metric m60: 0.49928949152590935 (+- 0), 0.49343171035932 (+- 0), 0.48756788098824344 (+- 0), 0.4816982347819986 (+- 0)
+Parameter Group ID: 61
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p61: [0.51851852]
+			Metric m61: 0.4921306746170688 (+- 0)
+Parameter Group ID: 62
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p62: [-0.88657407 -0.88425926 -0.88194444]
+			Metric m62: 0.48414206248168706 (+- 0), 0.4898357482554675 (+- 0), 0.49591150287747754 (+- 0)
+Parameter Group ID: 63
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p63: [-0.41435185]
+			Metric m63: 0.49058883955843663 (+- 0)
+Parameter Group ID: 64
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 65
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 66
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p66: [-1.  -0.5]
+			Metric m66: 0.48011461047675746 (+- 0), 0.4994826154856144 (+- 0)
+Parameter Group ID: 67
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p67: [0.14891975 0.14930556 0.14969136]
+			Metric m67: 0.4951150521492957 (+- 0), 0.48971722051056593 (+- 0), 0.48436512328665604 (+- 0)
+Parameter Group ID: 68
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p68: [-0.42592593]
+			Metric m68: 0.4898531452515644 (+- 0)
+Parameter Group ID: 69
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p69: [-0.16898148]
+			Metric m69: 0.4877924961231389 (+- 0)
+Parameter Group ID: 70
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p70: [0.84760802 0.84799383 0.84837963]
+			Metric m70: 0.49856724585039675 (+- 0), 0.4920501009245102 (+- 0), 0.48552820973290883 (+- 0)
+Parameter Group ID: 71
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 72
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 73
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p73: [-0.53703704]
+			Metric m73: 0.4955102245247054 (+- 0)
+Parameter Group ID: 74
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p74: [0.66049383 0.66087963 0.66126543]
+			Metric m74: 0.49688654565321194 (+- 0), 0.48902096469514733 (+- 0), 0.48117587893708974 (+- 0)
+Parameter Group ID: 75
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p75: [-0.5]
+			Metric m75: 0.49321027345404445 (+- 0)
+Parameter Group ID: 76
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p76: [-0.63194444]
+			Metric m76: 0.4809446234850248 (+- 0)
+Parameter Group ID: 77
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p77: [-0.02546296]
+			Metric m77: 0.4936053439583979 (+- 0)
+Parameter Group ID: 78
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p78: [-0.34722222]
+			Metric m78: 0.4982535893586742 (+- 0)
+Parameter Group ID: 79
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p79: [-0.77546296]
+			Metric m79: 0.49341820932882774 (+- 0)
+Parameter Group ID: 80
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p80: [0.94212963]
+			Metric m80: 0.48463622673257506 (+- 0)
+Parameter Group ID: 81
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p81: [-0.78009259]
+			Metric m81: 0.4931435298324162 (+- 0)
+Parameter Group ID: 82
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 8
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p82: [-0.43904321 -0.43865741]
+			Metric m82: 0.4964733557780533 (+- 0), 0.48711150487806765 (+- 0)
+Parameter Group ID: 83
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 7
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p83: [0.22453704]
+			Metric m83: 0.49520038701784747 (+- 0)
+Parameter Group ID: 84
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 4
+	Optimization Status: Successful
+		Successful Node Depth: 4
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p84: [-0.36651235 -0.36612654]
+			Metric m84: 0.495809808354336 (+- 0), 0.4870399652876941 (+- 0)
+Parameter Group ID: 85
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 86
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p86: [0.]
+			Metric m86: 0.4886424959293781 (+- 0)
+Parameter Group ID: 87
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 3
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p87: [-0.66666667]
+			Metric m87: 0.4970840978747205 (+- 0)
+Parameter Group ID: 88
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 89
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p89: [0.55555556]
+			Metric m89: 0.49659793789113305 (+- 0)
+Parameter Group ID: 90
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p90: [0.30555556]
+			Metric m90: 0.48130940684639667 (+- 0)
+Parameter Group ID: 91
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p91: [-0.98842593]
+			Metric m91: 0.4953538296296708 (+- 0)
+Parameter Group ID: 92
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p92: [0.11574074]
+			Metric m92: 0.49302303589649726 (+- 0)
+Parameter Group ID: 93
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p93: [-0.44444444]
+			Metric m93: 0.4882521259984502 (+- 0)
+Parameter Group ID: 94
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p94: [0.30787037]
+			Metric m94: 0.492125124320202 (+- 0)
+Parameter Group ID: 95
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p95: [0.5462963]
+			Metric m95: 0.4991474113037747 (+- 0)
+Parameter Group ID: 96
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p96: [-0.02777778]
+			Metric m96: 0.4952213556081172 (+- 0)
+Parameter Group ID: 97
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p97: [-0.25]
+			Metric m97: 0.4990495601980824 (+- 0)
+Parameter Group ID: 98
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 10
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p98: [-0.45601852 -0.4537037 ]
+			Metric m98: 0.4992641961823962 (+- 0), 0.48560736211243427 (+- 0)
+Parameter Group ID: 99
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 6
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param p99: [0.25925926]
+			Metric m99: 0.48859729550779757 (+- 0)
+_________________
+
+Input options: 
+	COMMAND : python -u testing_foo.py
+	n_per_command : 1
+	max_np : 1
+	m_1d : 5
+	repeat : 1
+	cleanup : 2
+	verbosity : 2
+	max_depth : 4
+	max_wait : 1
+	plotting : 0
+	path : ./optimization_data_2
+	analysis_wrapper : <function test_analysis at 0x7f4f205eaca0>
+	stopping_eq : 0
+	stopping_param : 0
+	stopping_err : 1
+	n_frames_per_run : None
+	m_2d : 3
+	m_3d : 3
+	m_4d : 3
+	m_5d : 3
+	parameters : [['p0', 'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10', 'p11', 'p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18', 'p19', 'p20', 'p21', 'p22', 'p23', 'p24', 'p25', 'p26', 'p27', 'p28', 'p29', 'p30', 'p31', 'p32', 'p33', 'p34', 'p35', 'p36', 'p37', 'p38', 'p39', 'p40', 'p41', 'p42', 'p43', 'p44', 'p45', 'p46', 'p47', 'p48', 'p49', 'p50', 'p51', 'p52', 'p53', 'p54', 'p55', 'p56', 'p57', 'p58', 'p59', 'p60', 'p61', 'p62', 'p63', 'p64', 'p65', 'p66', 'p67', 'p68', 'p69', 'p70', 'p71', 'p72', 'p73', 'p74', 'p75', 'p76', 'p77', 'p78', 'p79', 'p80', 'p81', 'p82', 'p83', 'p84', 'p85', 'p86', 'p87', 'p88', 'p89', 'p90', 'p91', 'p92', 'p93', 'p94', 'p95', 'p96', 'p97', 'p98', 'p99'], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], [[-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0], [-1.0, 1.0]]]
+	metrics : [['m0', 'm1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8', 'm9', 'm10', 'm11', 'm12', 'm13', 'm14', 'm15', 'm16', 'm17', 'm18', 'm19', 'm20', 'm21', 'm22', 'm23', 'm24', 'm25', 'm26', 'm27', 'm28', 'm29', 'm30', 'm31', 'm32', 'm33', 'm34', 'm35', 'm36', 'm37', 'm38', 'm39', 'm40', 'm41', 'm42', 'm43', 'm44', 'm45', 'm46', 'm47', 'm48', 'm49', 'm50', 'm51', 'm52', 'm53', 'm54', 'm55', 'm56', 'm57', 'm58', 'm59', 'm60', 'm61', 'm62', 'm63', 'm64', 'm65', 'm66', 'm67', 'm68', 'm69', 'm70', 'm71', 'm72', 'm73', 'm74', 'm75', 'm76', 'm77', 'm78', 'm79', 'm80', 'm81', 'm82', 'm83', 'm84', 'm85', 'm86', 'm87', 'm88', 'm89', 'm90', 'm91', 'm92', 'm93', 'm94', 'm95', 'm96', 'm97', 'm98', 'm99'], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99], [[0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5], [0.48, 0.5]], ['ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore']]
+	m_nd : [3, 3, 3, 3]

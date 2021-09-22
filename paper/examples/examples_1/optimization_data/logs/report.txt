@@ -1,0 +1,100 @@
+Total Time Taken: 231 seconds
+Total Blocks/Commands loaded: 23/345
+Total Params/Param-groups: 7/6
+Total Metrics: 8
+Parameter Group ID: 0
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param a: [-0.625]
+			Metric ma: 0.6286159830275562 (+- 0.02206188542184378)
+Parameter Group ID: 1
+	Number of parameters: 2
+	Number of metrics: 1
+	Number of Nodes run: 5
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param b: [-0.5]
+			Param c: [-3.0]
+			Metric mb: 0.609423190503215 (+- 0.044850614159192566)
+Parameter Group ID: 2
+	Number of parameters: 1
+	Number of metrics: 2
+	Number of Nodes run: 4
+	Maximum Depth: 3
+	Optimization Status: Successful
+		Successful Node Depth: 3
+		Optimal Parameters with corresponding metric values (and sd):
+			Param d: [2.3125 2.375  2.4375]
+			Metric md: 0.6605387397633058 (+- 0.05428223572301919), 0.6764097917574914 (+- 0.03251181837605802), 0.6589715819472743 (+- 0.03995535383540536)
+			Metric me: 0.9742513144204542 (+- 0.07226231799301122), 0.9956065585758914 (+- 0.032941848399437375), 0.9929531405434723 (+- 0.050753582268422345)
+Parameter Group ID: 3
+	Number of parameters: 1
+	Number of metrics: 2
+	Number of Nodes run: 4
+	Maximum Depth: 2
+	Optimization Status: Successful
+		Successful Node Depth: 2
+		Optimal Parameters with corresponding metric values (and sd):
+			Param f: [3.125]
+			Metric mf: 0.6334696252569987 (+- 0.041285701225593864)
+			Metric mg: 0.6216470675594051 (+- 0.05168457045031487)
+	Issues Noted:
+		0. Non overlapping ranges for the different metrics
+Parameter Group ID: 4
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Failed
+	Issues Noted:
+		0. No iterable ranges at root node
+Parameter Group ID: 5
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 23
+	Maximum Depth: 4
+	Optimization Status: Failed
+	Issues Noted:
+		0. Max Depth exceeded at node 14
+		1. Max Depth exceeded at node 11
+		2. Max Depth exceeded at node 9
+		3. Max Depth exceeded at node 22
+		4. Max Depth exceeded at node 8
+		5. Max Depth exceeded at node 13
+		6. Max Depth exceeded at node 20
+		7. Max Depth exceeded at node 21
+		8. Max Depth exceeded at node 7
+		9. Max Depth exceeded at node 15
+_________________
+
+Input options: 
+	COMMAND : python -u testing_foo.py
+	n_per_command : 1
+	max_np : 2
+	m_1d : 3
+	repeat : 5
+	cleanup : 2
+	verbosity : 2
+	max_depth : 4
+	max_wait : 1
+	plotting : 0
+	path : ./optimization_data
+	analysis_wrapper : <function test_analysis at 0x7fed5631ec10>
+	stopping_eq : 0
+	stopping_param : 0
+	stopping_err : 1
+	n_frames_per_run : None
+	m_2d : 3
+	m_3d : 3
+	m_4d : 3
+	m_5d : 3
+	parameters : [['a', 'b', 'c', 'd', 'f', 'h', 'k'], [0, 1, 1, 2, 3, 4, 5], [[-1.0, 1.0], [-2.0, 2.0], [-3.0, 3.0], [-4.0, 4.0], [-5.0, 5.0], [-6.0, 6.0], [-7.0, 7.0]]]
+	metrics : [['ma', 'mb', 'md', 'me', 'mf', 'mg', 'mh', 'mk'], [0, 1, 2, 2, 3, 3, 4, 5], [[0.6, 0.68], [0.6, 0.68], [0.6, 0.68], [0.9, 1.1], [0.6, 0.68], [0.6, 0.68], [0.85, 0.95], [0.4, 0.5]], ['ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore', 'ignore']]
+	m_nd : [3, 3, 3, 3]

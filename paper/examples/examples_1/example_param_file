@@ -1,0 +1,27 @@
+METRIC : ma : 0.6,0.68 : ignore
+METRIC : mb : 0.6,0.68 : ignore
+METRIC : md : 0.6,0.68 : ignore
+METRIC : me : 0.9,1.1 : ignore
+METRIC : mf : 0.6,0.68 : ignore
+METRIC : mg : 0.6,0.68 : ignore
+METRIC : mh : 0.85,0.95 : ignore
+METRIC : mk : 0.4,0.5 : ignore
+PARAM : a : ma : -1,1
+PARAM : b : mb : -2,2
+PARAM : c : mb: -3,3
+PARAM : d : md,me : -4,4
+PARAM : f : mf,mg : -5,5
+PARAM : h : mh : -6,6
+PARAM : k : mk : -7,7
+COMMAND : python -u testing_foo.py
+n_per_command : 1
+max_np : 2
+m_1d : 3
+repeat : 5
+cleanup : 2
+verbosity : 2
+max_depth : 4
+max_wait : 1
+plotting : 0
+path : ./optimization_data
+analysis_wrapper : testing_foo_analyzer : test_analysis
