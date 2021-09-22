@@ -1,0 +1,11 @@
+cd high
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../scripts/sample/final_runs/high/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_|XLEDC" "CrossLinkingMassSpectrometryRestraint_Distance_|XLDSS" ConnectivityRestraint_None ExcludedVolumeSphere_spc110 ExcludedVolumeSphere_gtusc ExcludedVolumeSphere_spc110_gtusc -pl "CrossLinkingMassSpectrometryRestraint_Data_Score_XLEDC" "CrossLinkingMassSpectrometryRestraint_Data_Score_XLDSS" Total_Score -alt 0.6 0.5 0.0 0.0 0.0 0.0 -aut 1.0 1.0 0.79 2.28 15.38 2.15 -mlt 0.0 0.0 0.0 0.0 0.0 0.0 -mut 25.0 35.0 0.0 0.0 0.0 0.0 -e
+mv ../../../scripts/sample/final_runs/high/good_scoring_models ./good_scoring_models
+cd ../low
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../scripts/sample/final_runs/low/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_|XLEDC" "CrossLinkingMassSpectrometryRestraint_Distance_|XLDSS" ConnectivityRestraint_None ExcludedVolumeSphere_spc110 ExcludedVolumeSphere_gtusc ExcludedVolumeSphere_spc110_gtusc -pl "CrossLinkingMassSpectrometryRestraint_Data_Score_XLEDC" "CrossLinkingMassSpectrometryRestraint_Data_Score_XLDSS" Total_Score -alt 0.6 0.5 0.0 0.0 0.0 0.0 -aut 1.0 1.0 0.79 2.28 15.38 2.15 -mlt 0.0 0.0 0.0 0.0 0.0 0.0 -mut 25.0 35.0 0.0 0.0 0.0 0.0 -e
+mv ../../../scripts/sample/final_runs/low/good_scoring_models ./good_scoring_models
+cd ../optimal
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../scripts/sample/final_runs/optimal/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_|XLEDC" "CrossLinkingMassSpectrometryRestraint_Distance_|XLDSS" ConnectivityRestraint_None ExcludedVolumeSphere_spc110 ExcludedVolumeSphere_gtusc ExcludedVolumeSphere_spc110_gtusc -pl "CrossLinkingMassSpectrometryRestraint_Data_Score_XLEDC" "CrossLinkingMassSpectrometryRestraint_Data_Score_XLDSS" Total_Score -alt 0.6 0.5 0.0 0.0 0.0 0.0 -aut 1.0 1.0 0.79 2.28 15.38 2.15 -mlt 0.0 0.0 0.0 0.0 0.0 0.0 -mut 25.0 35.0 0.0 0.0 0.0 0.0 -e
+mv ../../../scripts/sample/final_runs/optimal/good_scoring_models ./good_scoring_models
+cd ..
+python plot_comparative_final.py > plotting_output_final.txt

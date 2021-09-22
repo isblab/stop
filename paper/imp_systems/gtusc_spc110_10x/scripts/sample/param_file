@@ -1,0 +1,16 @@
+METRIC : gtusc_bead_acceptance : 0.3,0.5 : MonteCarlo_Acceptance_BallMover-[0-9]+-[0-9]+_bead_([0-9]|1[0-9]|2[0-9]|3[0-5])$
+METRIC : spc110_bead_acceptance : 0.3,0.5 : MonteCarlo_Acceptance_BallMover-[0-9]+-[0-9]+_bead_(3[6-9]|[4-9][0-9])$
+PARAM : gtusc_mtrans : gtusc_bead_acceptance : 1,15
+PARAM : spc110_mtrans : spc110_bead_acceptance : 1,15
+COMMAND : ../../../imp-custom/build/setup_environment.sh python -u modified_monomer.py
+n_per_command : 1
+n_frames_per_run : 5000
+max_np : 100
+max_wait : 60
+m_1d : 20
+repeat : 5
+cleanup : 0
+verbosity : 2
+max_depth : 5
+plotting : 2
+path : ./optimization_data

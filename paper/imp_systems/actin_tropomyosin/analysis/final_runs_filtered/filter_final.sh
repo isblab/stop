@@ -1,0 +1,17 @@
+cd high
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../modeling/final_runs/high/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_" ConnectivityRestraint_None ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score -pl ConnectivityRestraint_None CrossLinkingMassSpectrometryRestraint_Data_Score ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score Total_Score -alt 1.0 0.0 0.0 0.0 0.0 -aut 1.0 1.16 6.59 13.89 2.54 -mlt 0.0 0.0 0.0 0.0 0.0 -mut 30.0 0.0 0.0 0.0 0.0 -e
+mv ../../../modeling/final_runs/high/good_scoring_models ./good_scoring_models
+cd ../low
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../modeling/final_runs/low/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_" ConnectivityRestraint_None ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score -pl ConnectivityRestraint_None CrossLinkingMassSpectrometryRestraint_Data_Score ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score Total_Score -alt 1.0 0.0 0.0 0.0 0.0 -aut 1.0 1.16 6.59 13.89 2.54 -mlt 0.0 0.0 0.0 0.0 0.0 -mut 30.0 0.0 0.0 0.0 0.0 -e
+mv ../../../modeling/final_runs/low/good_scoring_models ./good_scoring_models
+cd ../optimal
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../modeling/final_runs/optimal/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_" ConnectivityRestraint_None ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score -pl ConnectivityRestraint_None CrossLinkingMassSpectrometryRestraint_Data_Score ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score Total_Score -alt 1.0 0.0 0.0 0.0 0.0 -aut 1.0 1.16 6.59 13.89 2.54 -mlt 0.0 0.0 0.0 0.0 0.0 -mut 30.0 0.0 0.0 0.0 0.0 -e
+mv ../../../modeling/final_runs/optimal/good_scoring_models ./good_scoring_models
+cd ../high_timed
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../modeling/final_runs_timed/high/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_" ConnectivityRestraint_None ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score -pl ConnectivityRestraint_None CrossLinkingMassSpectrometryRestraint_Data_Score ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score Total_Score -alt 1.0 0.0 0.0 0.0 0.0 -aut 1.0 1.16 6.59 13.89 2.54 -mlt 0.0 0.0 0.0 0.0 0.0 -mut 30.0 0.0 0.0 0.0 0.0 -e
+mv ../../../modeling/final_runs_timed/high/good_scoring_models ./good_scoring_models
+cd ../low_timed
+../../../../imp-custom/build/setup_environment.sh python ../../../../imp-custom/imp/modules/sampcon/pyext/src/select_good.py -rd ../../../modeling/final_runs_timed/low/ -rp output_ -sl "CrossLinkingMassSpectrometryRestraint_Distance_" ConnectivityRestraint_None ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score -pl ConnectivityRestraint_None CrossLinkingMassSpectrometryRestraint_Data_Score ExcludedVolumeSphere_None GaussianEMRestraint_None SAXSRestraint_Score Total_Score -alt 1.0 0.0 0.0 0.0 0.0 -aut 1.0 1.16 6.59 13.89 2.54 -mlt 0.0 0.0 0.0 0.0 0.0 -mut 30.0 0.0 0.0 0.0 0.0 -e
+mv ../../../modeling/final_runs_timed/low/good_scoring_models ./good_scoring_models
+cd ..
+python plot_comparative_final.py > plotting_output_final.txt

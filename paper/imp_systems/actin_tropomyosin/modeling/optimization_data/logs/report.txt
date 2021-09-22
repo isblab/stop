@@ -1,0 +1,62 @@
+Total Time Taken: 61398 seconds
+Total Blocks/Commands loaded: 1/80
+Total Params/Param-groups: 5/3
+Total Metrics: 3
+Parameter Group ID: 0
+	Number of parameters: 2
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param tropo_rb_mtrans: [0.1 0.4]
+			Param tropo_rb_mrot: [0.1 0.1]
+			Metric rb1_acceptance: 0.43424666666666667 (+- 0.032110466275724545), 0.32789999999999997 (+- 0.024253384643522762)
+Parameter Group ID: 1
+	Number of parameters: 2
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param actgel_rb_mtrans: [0.1]
+			Param actgel_rb_mrot: [0.1]
+			Metric rb2_acceptance: 0.30732000000000004 (+- 0.0170876251519435)
+Parameter Group ID: 2
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param bead_mt: [3.4 3.6 3.8 4.  4.2]
+			Metric bead_acceptance: 0.4890379710144927 (+- 0.004843790256996097), 0.4592730434782609 (+- 0.027853269521949865), 0.4372950724637682 (+- 0.024696374480829678), 0.42945217391304347 (+- 0.008215861729176774), 0.4033901449275362 (+- 0.017578121112933387)
+_________________
+
+Input options: 
+	COMMAND : ../../imp-custom/build/setup_environment.sh python -u modeling_manual.py
+	n_per_command : 1
+	n_frames_per_run : 6000
+	max_np : 100
+	max_wait : 60
+	m_1d : 16
+	m_2d : 4
+	repeat : 5
+	cleanup : 0
+	verbosity : 2
+	max_depth : 5
+	plotting : 2
+	path : ./optimization_data
+	stopping_eq : 0
+	stopping_param : 0
+	stopping_err : 1
+	analysis_wrapper : <function DefaultAnalysis at 0x7f6f73b77ee0>
+	m_3d : 3
+	m_4d : 3
+	m_5d : 3
+	parameters : [['tropo_rb_mtrans', 'tropo_rb_mrot', 'actgel_rb_mtrans', 'actgel_rb_mrot', 'bead_mt'], [0, 0, 1, 1, 2], [[0.1, 1.0], [0.1, 0.5], [0.1, 1.0], [0.1, 0.5], [2.0, 5.0]]]
+	metrics : [['rb1_acceptance', 'rb2_acceptance', 'bead_acceptance'], [0, 1, 2], [[0.3, 0.5], [0.3, 0.5], [0.4, 0.5]], ['MonteCarlo_Acceptance_P29246', 'MonteCarlo_Acceptance_P29248', 'MonteCarlo_Acceptance_BallMover']]
+	m_nd : [4, 3, 3, 3]
