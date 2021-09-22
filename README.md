@@ -3,8 +3,7 @@
 ## About
 StOP is an gradient-free, parallel, global optimization framework primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform. It utilizes a parallel DFS-based search similar to MCS but adapted to a range-finding setup.
 The code can be adapted to any suitable optimization problem outside of IMP too.
-The relevant paper can be found here.
-
+The relevant paper can be found here (link) and the paper related scripts, plots and the explanation is in the `paper` folder.
 
 ### Requirements
 Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
@@ -39,6 +38,4 @@ One or more of the following options must be present in a valid input file. You 
 |`m_<n>d : <value>`|any integer (see below for default values)|specify the `m(n)` as specified in the manuscript|
 |`path : <value>`|a valid file path|a path to store all the optimization runtime data in (including the output)|
 |`verbosity : <value>`|0, 1, 2| 0 -> 2 increasing verbosity of the progress|
-
-
-For `m_<n>d`, the default value is calculated as `m_<n>d = max(3, log())` with `m_1d=os.cpu_count()`. But it is strongly advised to overwrite this to ensure that the values relevant for the parameter groups in the input are multiples of one of those values.
+|`plotting : <value>`|0, 1, 2| 0 -> 2 increasing level of plots|
