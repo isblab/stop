@@ -1,5 +1,7 @@
 # StOP: Stochastic Optimization of Parameters for IMP
 
+![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
+
 ## About
 StOP is a gradient-free, parallel, global optimization framework primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform. It utilizes a parallel DFS-based search similar in spirit to MCS but adapted to a range-finding setup.
 The code can be adapted to any suitable optimization problem.
