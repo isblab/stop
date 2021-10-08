@@ -21,5 +21,6 @@ Finally, run the `scripts` under the `scripts` folder after all the data is gene
 4. `filter.sh` and `filter_final.sh` for both the systems contain the commands to filter based on cross-linking criterion alone, plot the score plots for models passing this criterion along with the mean - 0.25SD cutoffs for the restrains based on the models passing this cutoff, and to get the good-scoring models after applying cutoff thresholds for all the restraints.
 5. `exhaustiveness.sh` for both the systems contain the commands to run the sampling exhaustiveness/convergence pipeline
 
-Note: While the copies of StOP files are present in all the IMP system folders to make the bash scripting easier, it is sufficient to have a single copy of the files `optimizer.py`, `main.py`, `analysis.py` and `utils.py` and modify the paths in the bash scripts accordingly.
-Note: Only the good-scoring models, the filtered model-ids and the results of the analysis pipeline (sampling exhaustiveness) are present in the `imp_systems` zenodo link.
+**Note**: While the copies of StOP files are present in all the IMP system folders to make the bash scripting easier, it is sufficient to have a single copy of the files `optimizer.py`, `main.py`, `analysis.py` and `utils.py` and modify the paths in the bash scripts accordingly.
+
+**Note**: Only the good-scoring models, the filtered model-ids and the results of the analysis pipeline (sampling exhaustiveness) are present in the `imp_systems` zenodo link.
