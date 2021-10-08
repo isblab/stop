@@ -22,10 +22,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest pytest-cov
         pip install -r requirements.txt
+        sudo apt install p7zip-full p7zip-rar
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Prepate test data
+      run: |
+        mkdir tests/test_data/output1
+        mkdir tests/test_data/output2
+        mkdir tests/test_data/output3
+        7z x tests/test_data/test_data.7z -otests/test_data/output1
+        7z x tests/test_data/test_data.7z -otests/test_data/output2
+        7z x tests/test_data/test_data.7z -otests/test_data/output3
     - name: Test with pytest
       run: |
-        pytest --cov --cov-branch --cov-report term-missing
+        pytest --cov=. --cov-branch --cov-report term-missing --cov-append

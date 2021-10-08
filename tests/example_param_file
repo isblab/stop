@@ -15,13 +15,13 @@ PARAM : h : mh : -6,6
 PARAM : k : mk : -7,7
 COMMAND : python -u testing_foo.py
 n_per_command : 1
-max_np : 2
+max_np : 10
 m_1d : 3
 repeat : 5
-cleanup : 2
+cleanup : 0
 verbosity : 2
 max_depth : 4
 max_wait : 1
-plotting : 0
+plotting : 2
 path : ./temp_data
 analysis_wrapper : testing_foo_analyzer : test_analysis
