@@ -17,6 +17,8 @@ def test_analyzer():
     assert ans[0]
     assert all([(x in ans[2]) for x in ['ma', 'mb']])
     assert all([(ans[2][x][1] < 1e-8) for x in ['ma', 'mb']])
+    shutil.rmtree('./temp_data')
+    os.chdir('..')
 
 
 def test_runexamples():
@@ -37,3 +39,5 @@ def test_runexamples():
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 2, rd
+    shutil.rmtree('./temp_data')
+    os.chdir('..')

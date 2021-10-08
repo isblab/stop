@@ -55,6 +55,9 @@ def correct_mc_cumulative(mc_array, min_temp_exchanges):
         # At all exchanges, the replica changes, and hence, the numbers are not valid
         # TODO: Does the exchange happen before or after the MC steps? This changes which all entries to NaN out
         corrected_array[np.array(min_temp_exchanges)] = np.NAN
+        if np.sum(np.isnan(corrected_array)) > 0.8 * len(corrected_array):
+            adjusted_mc_array.append(np.array(sub_mc))
+            continue
         adjusted_mc_array.append(corrected_array)
     return adjusted_mc_array
 
@@ -154,13 +157,6 @@ def parser(path):  # To parse all the stat files
     return True, (z, z_replica, main_array, main_array_replica, inverted_dict, inverted_dict_replica, main_order)
 
 
-# find the cutoff where the score first falls within the sigma * sd of the mean of the final delta_time frames
-def cutoff_convergence2(series, sigma, delta_time):
-    mn = np.mean(series[-delta_time:])
-    cutoff_val = mn + sigma * np.std(series[-delta_time:], ddof=1)
-    return (np.array(series) < cutoff_val).tolist().index(True)
-
-
 def check_equilibriation(series, plot, name, sigma=2, piece=0.25):
     piece_length = int(piece * len(series))
     final_part = series[-piece_length:]
@@ -204,14 +200,6 @@ def check_equilibriation(series, plot, name, sigma=2, piece=0.25):
     return equil
 
 
-def n_average(x, n=100):
-    k = len(x) // n
-    out = []
-    for i in range(k):
-        out.append(np.mean(x[n * i:n * i + n]))
-    return out
-
-
 def DefaultAnalysis(names_of_files, metric_names, param_search_names, plot):
     results = dict()
     temp = [[] for i in metric_names]
@@ -240,7 +228,7 @@ def DefaultAnalysis(names_of_files, metric_names, param_search_names, plot):
                 adjusted_unfiltered_array_list = correct_mc_cumulative(unfiltered_array_list, exchange_indices)
                 last_50 = np.array([x[-len(x) // 2:] for x in adjusted_unfiltered_array_list])
                 last_50 = np.mean(last_50, axis=0)  # average across matching keys
-                temp[ind].append(np.mean(last_50.flatten()))  # average across frames
+                temp[ind].append(np.nanmean(last_50.flatten()))  # average across frames
             elif replica_key:
                 header_list = [x for x in inverted_dict_replica.keys() if re.search(search_string, str(x))]
                 replica_list = []
@@ -251,7 +239,7 @@ def DefaultAnalysis(names_of_files, metric_names, param_search_names, plot):
                     last_50 = np.mean(last_50, axis=0)  # average across matching keys
                     replica_list.append(last_50)
                 replica_list = np.mean(np.array(replica_list, dtype=float), axis=0)  # average across replicas
-                temp[ind].append(np.mean(replica_list.flatten()))  # average across frames
+                temp[ind].append(np.nanmean(replica_list.flatten()))  # average across frames
     for name, tempvals in zip(metric_names, temp):
         results[name] = (np.mean(tempvals), np.std(tempvals))  # average across runs
     return True, equilibriation, results
