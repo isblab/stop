@@ -3,9 +3,11 @@
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
 
 ## About
-StOP is a gradient-free, parallel, global optimization framework primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform. It utilizes a parallel DFS-based search similar in spirit to MCS but adapted to a range-finding setup.
+StOP is a gradient-free, parallel, global optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
 The code can be adapted to any suitable optimization problem.
-The relevant paper can be found here (link) and the paper related scripts, plots and the explanation for the reproduction of figures is in the `paper` folder.
+
+### Manuscript
+The relevant paper can be found here (link). Paper-related scripts and the explanation for the reproduction of figures is in the `paper` folder.
 
 ### Requirements
 Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
