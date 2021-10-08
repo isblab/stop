@@ -20,15 +20,15 @@ def logger_wrapper(*args):
     lg.handle_processes()
 
 
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
+def main(argv):
+    if len(argv) < 2:
         print("FATAL ERROR: A param file must be provided for the program to continue.")
         quit(1)
-    elif len(sys.argv) > 2:
+    elif len(argv) > 2:
         print("FATAL ERROR: Too many command line arguments passed. Only 1 argument expected (param file path)")
         quit(1)
 
-    filename = sys.argv[1]
+    filename = argv[1]
     if not os.path.isfile(filename):
         print(f'FATAL ERROR: File-path is incorrect: {filename}')
         quit(1)
@@ -87,3 +87,7 @@ if __name__ == '__main__':
     executor_queue.close()
     del logger_queue, executor_queue
     print("That's all folks!")
+
+
+if __name__ == '__main__':
+    main(sys.argv)
