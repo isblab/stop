@@ -3,7 +3,7 @@
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
 
 ## About
-StOP is a gradient-free, parallel, global optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
+StOP is a gradient-free, parallel, global, stochastic, multi-objective optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
 The code can be adapted to any suitable optimization problem.
 
 ### Manuscript
