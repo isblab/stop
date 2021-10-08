@@ -23,5 +23,5 @@ verbosity : 2
 max_depth : 4
 max_wait : 1
 plotting : 0
-path : .
+path : ./temp_data
 analysis_wrapper : testing_foo_analyzer : test_analysis
