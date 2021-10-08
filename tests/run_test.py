@@ -6,9 +6,11 @@ import shutil
 
 
 def test_analyzer():
+    os.chdir('./tests')
     os.mkdir('./temp_data')
+    sys.path = ['..'] + sys.path
     import analyzer
-    data = [f'./tests/test_data/output{x}' for x in range(1, 4)]
+    data = [f'./test_data/output{x}' for x in range(1, 4)]
     ans = analyzer.DefaultAnalysis(data, ['ma', 'mb'],
                                    ['GaussianEMRestraint_None', 'CrossLinkingMassSpectrometryRestraint_Distance_'],
                                    './temp_data')
