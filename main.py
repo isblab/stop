@@ -4,7 +4,6 @@ import os
 import time
 import warnings
 import pickle
-import atexit
 
 from utils import parse_file, Executor, MPLogger
 from optimizer import Optimizer

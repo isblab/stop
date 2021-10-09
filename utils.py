@@ -168,7 +168,7 @@ class Executor:
                 continue
             last_talk = time.time()
             self.talk_to_processes()
-        message = (time.time(), 'STATUS', f'Received death signal. Dying.', 'EXECUTOR')
+        message = (time.time(), 'STATUS', 'Received death signal. Dying.', 'EXECUTOR')
         self.logger_queue.put(message)
 
 
@@ -407,7 +407,7 @@ def parse_file(filename):
         p_groups[i] = group
         for j in m_set:
             if not ((m_groups[m_names.index(j)] is None) or (m_groups[m_names.index(j)] == group)):
-                print(f'PARSING INTERNAL ERROR: Group mismatch. Union-Find failure?')
+                print('PARSING INTERNAL ERROR: Group mismatch. Union-Find failure?')
                 quit(1)
             m_groups[m_names.index(j)] = group
     param_mapping['parameters'] = [p_names, p_groups, p_ranges]

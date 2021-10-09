@@ -12,7 +12,6 @@ from matplotlib.colors import ListedColormap, Normalize
 from itertools import product
 from utils import iterate_over_all_axes, Job
 from tqdm import tqdm
-import multiprocessing as mp
 
 
 # Contains all the details of a single parameter group (methods allow updating the DFS-tree for this group)
@@ -355,10 +354,10 @@ class ParameterGroup:
             self.node_status[self.current_node] = 1
         elif len(iterable_ranges) == 0:  # No children to create
             if self.current_node == 0:
-                self.issues.add(f'No iterable ranges at root node')
+                self.issues.add('No iterable ranges at root node')
             else:
                 assert len(self.metric_names) > 1
-                self.issues.add(f'Non overlapping ranges for the different metrics')
+                self.issues.add('Non overlapping ranges for the different metrics')
             self.node_status[self.current_node] = -1
             cont = self.dfs_continue()
             if not cont:
@@ -632,7 +631,7 @@ class Optimizer:
         self.blocks_loaded += 1
 
     def handle_processes(self):
-        message = (time.time(), 'STATUS', f'Awaiting progress and results', 'OPTIMIZER')
+        message = (time.time(), 'STATUS', 'Awaiting progress and results', 'OPTIMIZER')
         self.logger_queue.put(message)
         fresh_for_analysis = []
         terminate = False
@@ -746,7 +745,7 @@ class Optimizer:
         return run_not_finished
 
     def report(self):
-        message = (time.time(), 'INFO', f'Generating report', 'OPTIMIZER')
+        message = (time.time(), 'INFO', 'Generating report', 'OPTIMIZER')
         self.logger_queue.put(message)
         with open(f'{self.output_path}/logs/report.txt', 'w') as f:
             f.write(f'Total Time Taken: {int(time.time() - self.initialize_time)} seconds\n')
@@ -764,7 +763,7 @@ class Optimizer:
                 if i.state == 1:
                     temp = [i.node_depth[j] for j in range(len(i.node_depth)) if i.node_status[j] == 1][0]
                     f.write(f'\t\tSuccessful Node Depth: {temp}\n')
-                    f.write(f'\t\tOptimal Parameters with corresponding metric values (and sd):\n')
+                    f.write('\t\tOptimal Parameters with corresponding metric values (and sd):\n')
                     temp = set([len(i.optimized_values[x]) for x in i.optimized_values])
                     assert (len(temp) == 1) or ((len(temp) == 2) and (1 in temp))
                     for p in i.parameter_names:
@@ -778,10 +777,10 @@ class Optimizer:
                 if i.state == -1:
                     pass
                 if len(i.issues) > 0:
-                    f.write(f'\tIssues Noted:\n')
+                    f.write('\tIssues Noted:\n')
                     for num, issue in enumerate(i.issues):
                         f.write(f'\t\t{num}. {issue}\n')
             f.write('_________________\n\n')
-            f.write(f'Input options: \n')
+            f.write('Input options: \n')
             for p in self.all_params:
                 f.write(f'\t{p} : {self.all_params[p]}\n')
