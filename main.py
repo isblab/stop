@@ -19,13 +19,14 @@ def logger_wrapper(*args):
     lg.handle_processes()
 
 
-def main(argv):
+if __name__ == '__main__':
     try:
         from pytest_cov.embed import cleanup_on_sigterm
     except ImportError:
         pass
     else:
         cleanup_on_sigterm()
+    argv = sys.argv
     if len(argv) < 2:
         print("FATAL ERROR: A param file must be provided for the program to continue.")
         quit(1)
@@ -92,7 +93,3 @@ def main(argv):
     executor_queue.close()
     del logger_queue, executor_queue
     print("That's all folks!")
-
-
-if __name__ == '__main__':
-    main(sys.argv)
