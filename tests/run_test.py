@@ -12,7 +12,7 @@ def test_analyzer():
     import analyzer
     data = [f'./test_data/output{x}' for x in range(1, 4)]
     ans = analyzer.DefaultAnalysis(data, ['ma', 'mb'],
-                                   ['GaussianEMRestraint_None', 'CrossLinkingMassSpectrometryRestraint_Distance_'],
+                                   ['GaussianEMRestraint_None', 'ReplicaExchange_SwapSuccessRatio'],
                                    './temp_data')
     assert ans[0]
     assert all([(x in ans[2]) for x in ['ma', 'mb']])
@@ -39,5 +39,12 @@ def test_runexamples():
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 2, rd
+    shutil.rmtree('./temp_data')
+    os.mkdir('./temp_data')
+    main.main(['', 'example_param_file3'])
+    assert os.path.isfile('./temp_data/logs/report.txt')
+    with open('./temp_data/logs/report.txt') as f:
+        rd = f.read().split('\n')
+        assert len([x for x in rd if 'Optimization Status: ' in x]) == 100, rd
     shutil.rmtree('./temp_data')
     os.chdir('..')

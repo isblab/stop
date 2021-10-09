@@ -653,12 +653,12 @@ class Optimizer:
                 self.logger_queue.put(ms)
                 if (message.return_code != 0) and self.stop_err:
                     terminate = True
-                    message = (time.time(), 'WARNING', f'Terminating the run due to non-zero exit code', 'OPTIMIZER')
+                    message = (time.time(), 'WARNING', 'Terminating the run due to non-zero exit code', 'OPTIMIZER')
                     self.logger_queue.put(message)
         if not terminate:
             terminate = self.analyze(fresh_for_analysis)
         self.clean(fresh_for_analysis)
-        message = (time.time(), 'STATUS', f'Finished handling the last block', 'OPTIMIZER')
+        message = (time.time(), 'STATUS', 'Finished handling the last block', 'OPTIMIZER')
         self.logger_queue.put(message)
         return terminate
 
@@ -666,14 +666,14 @@ class Optimizer:
         location = f'{self.output_path}/logs'
         if self.plotting == 0:
             return
-        message = (time.time(), 'INFO', f'Plotting', 'OPTIMIZER')
+        message = (time.time(), 'INFO', 'Plotting', 'OPTIMIZER')
         self.logger_queue.put(message)
         for i in self.parameter_group_objs:
             i.plot_all(location)
 
     def clean(self, data_to_clean):
         if self.cleanup >= 1:
-            message = (time.time(), 'INFO', f'Cleaning stuff', 'OPTIMIZER')
+            message = (time.time(), 'INFO', 'Cleaning stuff', 'OPTIMIZER')
             self.logger_queue.put(message)
             for i in data_to_clean:
                 j = i.split('/')[-1].split('output_')[-1]
@@ -729,12 +729,12 @@ class Optimizer:
             warnings.warn(f'Failed to equilibriate in {warning_jobs}', RuntimeWarning)
         if len(warning_jobs_err) > 0:
             warnings.warn(f'Error in analysis {warning_jobs_err}.', RuntimeWarning)
-        message = (time.time(), 'INFO', f'Finished analysis', 'OPTIMIZER')
+        message = (time.time(), 'INFO', 'Finished analysis', 'OPTIMIZER')
         self.logger_queue.put(message)
         return terminate
 
     def update_state(self):
-        message = (time.time(), 'INFO', f'Updating for parameter-group states and DFS trees', 'OPTIMIZER')
+        message = (time.time(), 'INFO', 'Updating for parameter-group states and DFS trees', 'OPTIMIZER')
         self.logger_queue.put(message)
         run_not_finished = False
         for i in self.parameter_group_objs:

@@ -4,12 +4,11 @@ PARAM : a : ma : -1,1
 PARAM : b : mb : -2,2
 PARAM : c : mb: -3,3
 COMMAND : python -u testing_foo2.py
-n_per_command : 1
 max_np : 2
 m_1d : 3
-repeat : 5
+repeat : 2
 cleanup : 2
-verbosity : 1
+verbosity : 0
 max_depth : 4
 max_wait : 1
 plotting : 1

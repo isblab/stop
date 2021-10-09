@@ -16,13 +16,6 @@ if len(sys.argv) > 1:
         return -(x ** 2) + 1 + np.random.normal(0, 0.05)
 
 
-    def foo2(x):
-        return x * 0.5 + 0.7 + np.random.normal(0, 0.05)
-
-    def foo3(x):
-        return 1 - x ** 3 - 1.2 * x ** 2 + 0.5 * x + np.random.normal(0, 0.05)
-
-
     def fooma(a):
         return foo(a)
 
@@ -30,26 +23,6 @@ if len(sys.argv) > 1:
     def foomb(b, c):
         return foo((b + c) / 2)
 
-
-    def foomd(d):
-        return foo(d)
-
-
-    def foome(d):
-        return foo2(d)
-
-    def foomf(f):
-        return foo(f)
-
-    def foomg(f):
-        return foo3(f)
-
-    def foomh(h):
-        return foo(h - 0.5)
-
-    def foomk(k):
-        z = zdict[np.argmin(np.abs(np.linspace(-1, 1, 1000) - k))]
-        return z + (np.random.random() - 0.5) * 0.1
 
     ma = fooma(a)
     mb = foomb(b, c)

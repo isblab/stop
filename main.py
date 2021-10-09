@@ -20,6 +20,12 @@ def logger_wrapper(*args):
 
 
 def main(argv):
+    try:
+        from pytest_cov.embed import cleanup_on_sigterm
+    except ImportError:
+        pass
+    else:
+        cleanup_on_sigterm()
     if len(argv) < 2:
         print("FATAL ERROR: A param file must be provided for the program to continue.")
         quit(1)
