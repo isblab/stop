@@ -50,15 +50,6 @@ def plot_for_2d(self):
         marker_list = ['o', 'v', '^', '<', '>', 'P', '*', '1', '2', '3', '4']
         d = self.node_depth[i]
 
-        all_vals = np.hstack([x[self.metric_names[0]].flatten() for x in self.metric_values_nodes])
-        mx, mn = np.nanmax(all_vals), np.nanmin(all_vals)
-        rng = self.metric_ranges[0]
-        r1, r2 = (rng[0] - mn) / mx, (rng[1] - mn) / mx
-        r1, r2 = int(r1 * 256), int(r2 * 256)
-        cmapnew = cmap(np.linspace(0, 1, 256))
-        pink = np.array([248 / 256, 24 / 256, 148 / 256, 1])
-        cmapnew[r1:r2 + 1, :] = pink
-        cmapnew = ListedColormap(cmapnew)
         if d in depths_taken:
             lab = None
         else:
@@ -67,16 +58,24 @@ def plot_for_2d(self):
         ax.scatter(p1 / 2, p2 / 3, c='black', marker=marker_list[d % len(marker_list)],
                    label=lab, s=60, zorder=10)
 
-    norm = Normalize(vmin=mn, vmax=mx)
-    fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmapnew),
-                 orientation='vertical')
     ax.set_title('')
     ax.set_ylabel(f'Parameter 1 Value')
     ax.set_xlabel(f'Parameter 2 Value')
     ax.legend()
     xvals = np.linspace(-1.1, 1.1, 100)
     xvals, yvals = np.meshgrid(xvals, xvals)
-    zvals = 1 - ((xvals + yvals) / 2) ** 2
+    zvals = np.clip(1 - ((xvals + yvals) / 2) ** 2, 0, 1)
+    mx, mn = 1, 0
+    rng = (0.6, 0.68)
+    r1, r2 = (rng[0] - mn) / mx, (rng[1] - mn) / mx
+    r1, r2 = int(r1 * 256), int(r2 * 256)
+    cmapnew = cmap(np.linspace(0, 1, 256))
+    pink = np.array([248 / 256, 24 / 256, 148 / 256, 1])
+    cmapnew[r1:r2 + 1, :] = pink
+    cmapnew = ListedColormap(cmapnew)
+    norm = Normalize(vmin=mn, vmax=mx)
+    fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmapnew),
+                 orientation='vertical')
     plt.pcolormesh(np.linspace(-1.1, 1.1, 100), np.linspace(-1.1, 1.1, 100), zvals, cmap=cmapnew, shading='nearest',
                    zorder=-10)
     plt.savefig('../paper_example_figures/fig_2d_0.svg')
