@@ -1,7 +1,8 @@
 # StOP: Stochastic Optimization of Parameters for IMP
 
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
-![Uploading 5z.png…]()
+
+![5z](https://user-images.githubusercontent.com/8314735/140460073-3093167c-dbc4-4560-bbb3-6e6c74d79124.png)
 
 ## About
 StOP is a gradient-free, parallel, global, stochastic, multi-objective optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
