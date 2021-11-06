@@ -1,1 +1,0 @@
-Number of Models: optimal=10398, high=3231, low=0, high_timed=3606, low_timed=0

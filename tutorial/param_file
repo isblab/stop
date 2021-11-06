@@ -1,0 +1,21 @@
+METRIC : rb1_acceptance : 0.3,0.5 : MonteCarlo_Acceptance_P29246
+METRIC : rb2_acceptance : 0.3,0.5 : MonteCarlo_Acceptance_P29248
+METRIC : bead_acceptance : 0.4,0.5 : MonteCarlo_Acceptance_BallMover
+PARAM : tropo_rb_mtrans : rb1_acceptance : 0.1,1
+PARAM : tropo_rb_mrot : rb1_acceptance : 0.1,0.5
+PARAM : actgel_rb_mtrans : rb2_acceptance : 0.1,1
+PARAM : actgel_rb_mrot : rb2_acceptance : 0.1,0.5
+PARAM : bead_mt : bead_acceptance : 2,5
+COMMAND : IMP_PATH/setup_environment.sh python -u modeling_manual.py
+n_per_command : 1
+n_frames_per_run : 6000
+max_np : 100
+max_wait : 60
+m_1d : 8
+m_2d : 4
+repeat : 5
+cleanup : 0
+verbosity : 2
+max_depth : 5
+plotting : 2
+path : ./optimization_data
