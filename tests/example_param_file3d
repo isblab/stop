@@ -1,0 +1,15 @@
+METRIC : ma : 0.2,0.4 : ignore
+METRIC : mb : 0.05,0.15 : ignore
+METRIC : mc : -0.1,0.05 : ignore
+PARAM : a : ma,mb,mc : -1,1
+PARAM : b : ma,mb,mc : -1,1
+PARAM : c : ma,mb,mc : -1,1
+COMMAND : python -u testing_foo3d.py
+m_1d : 3
+repeat : 1
+cleanup : 0
+verbosity : 2
+max_wait : 1
+plotting : 2
+path : ./temp_data
+analysis_wrapper : testing_foo_analyzer3d : test_analysis

@@ -41,6 +41,14 @@ def test_runexamples():
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 2, rd
     shutil.rmtree('./temp_data')
     os.mkdir('./temp_data')
+    s = subprocess.run(['python', '../main.py', 'example_param_file3d'], text=True, capture_output=True)
+    assert s.returncode == 0
+    assert os.path.isfile('./temp_data/logs/report.txt')
+    with open('./temp_data/logs/report.txt') as f:
+        rd = f.read().split('\n')
+        assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 1, rd
+    shutil.rmtree('./temp_data')
+    os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file3'], text=True, capture_output=True)
     assert s.returncode == 0
     assert os.path.isfile('./temp_data/logs/report.txt')
