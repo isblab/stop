@@ -39,27 +39,40 @@ One or more of the following options must be present in a valid input file. You 
 |`max_depth : <value>`|any integer (default = 5)|maximum allowable depth of the DFS tree|
 |`repeat : <value>`|any integer (default = 3)|number of times to rerun the script at the same parameter values to average the stochastic variation|
 |`m_<n>d : <value>`|any integer|specify the `m(n)` as specified in the manuscript. One can individually set the value of `m` for different `n` by using multiple `m_<n>d` keys with different `n`|
-|`path : <value>`|a valid file path|a path to store all the optimization runtime data in. The IMP output will be stored under folders named `output_<number>` within this path|
+|`path : <value>`|a valid file path (default = `./`)|a path to store all the optimization runtime data in. The IMP output will be stored under folders named `output_<number>` within this path|
 |`verbosity : <value>`|0, 1, 2| 0 -> 2 increasing verbosity of the progress|
 |`plotting : <value>`|0, 1, 2| 0 -> 2 increasing level of plotting|
 |`n_per_command : <value>`|any integer| Number of processes spawned per command invocation. Relevant for `mpirun` based replica exchange. Allows for a better progress bar.|
 |`n_frames : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
-|`max_wait : <value>`|any integer (default=60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|
+|`max_wait : <value>`|any integer (default = 60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|
+|`stopping_eq : <value>`|0, 1 (default = 0)| Whether to StOP is any of the runs fails to equilibriate during analysis|
+|`stopping_err : <value>`|0, 1 (default = 1)| Whether to StOP is any of the runs throws an error during analysis. Only change this if you have a custom StOP setup|
+|`analysis_wrapper : <file> : <function>`||see below for details|
+
 
 ### Analysis Details
 
-The user submitted regex strings are matched across all the keys in stat-file, and on failing to match any keys, the stat-replica-file. Next, the values for these matched headers are extracted. The total score of the run is then checked for equilibriation by comparing the mean of the final quarter of frames to the penultimate quarter. If either of the means are outside 2SD of either of the quarters, the run is classified as unequilibriated. Next, the matched headers are extracted for the final half of the runs. These are assumed to be cumulative statistics and a correction is applied to them to fix this. Next, they are averaged across the matched headers, across the frames and across replicas (if applicable).
+By default, StOP uses the Default analysis file `analyzer.py`. The user submitted regex strings are matched across all the keys in stat-file, and on failing to match any keys, the stat-replica-files. There are two special keys that you can use with the default analysis function, `MinTempReplicaExchangeRatio` and `AllTempReplicaExchangeRatio`. Explore the replica exchange tutorial for more details. Next, the values for these matched headers are extracted. The total score of the run is then checked for equilibriation by comparing the mean of the final quarter of frames to the penultimate quarter. If either of the means are outside 2SD of either of the quarters, the run is classified as unequilibriated (the downstream behavior in this case depends on the options). Next, the matched headers are extracted for the final half of the runs. These are assumed to be cumulative statistics and a correction is applied to them to fix this (to override this, you can create a custom analysis script as described below). Next, they are averaged across the matched headers, across the frames and across replicas (if applicable).
+
+### Custom Analysis Script
+
+In order to create a custom analysis script, create a python file in the same directory as the working directory of the python session where StOP is running (or the file should be on the `sys.path`). Create a function inside this file with the following signature:
+```python
+def foo(names_of_files, metric_names, param_search_names, plot):
+	do stuff
+	return error, equilibriation, results
+```
+Here, `names_of_files` will be a list of the locations where the stat/replica_stat files are stored for each run (each member of the list corresponds to a separate run). `metric_names` are the names of the metrics that need to be analyzed and the `param_search_names` are the regex strings inputted in the options file. `plot` can be ignored. `error` evaluates to `True` if the analysis did not encounter any errors, and `False` otherwise (it is preferable to catch errors this way rather than raise the error). `equilibriation` is a dictionary with the keys being the elements of the list `names_of_files` and the values are booleans representing if the corresponding runs equilibriated (`True`) or not. `results` is a dictionary, the keys of which are the elements of the list `metric_names` and the value is a tuple (mean, sd) of the corresponding metric for the set of runs `names_of_files`. 
 
 ### Upcoming changes
 
-1. More tutorials (including a tutorial to optimize replica exchange maximum temperature)
-2. Better documentation of the options above
-3. More comprehensive tests
+1. A tutorial to optimize replica exchange maximum temperature
+2. Cooler documentation!
+3. More comprehensive tests and coverage report badge on the readme
 4. Sampling the inner regions of hyper-rectangles by allowing diagonal iterable ranges
 
 ### Manuscript
 
 Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies. Life. 2021; 11(11):1183. https://doi.org/10.3390/life11111183
 
-The relevant paper can be found [here](https://doi.org/10.3390/life11111183). Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444
-).
+The relevant paper can be found [here](https://doi.org/10.3390/life11111183). Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444).

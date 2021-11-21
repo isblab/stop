@@ -1,0 +1,62 @@
+Total Time Taken: 202191 seconds
+Total Blocks/Commands loaded: 2/48
+Total Params/Param-groups: 5/3
+Total Metrics: 3
+Parameter Group ID: 0
+	Number of parameters: 2
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param tropo_rb_mtrans: [0.1 0.4]
+			Param tropo_rb_mrot: [0.1 0.1]
+			Metric rb1_acceptance: 0.4696666666666666 (+- 0.04031678264647322), 0.3373777777777778 (+- 0.0010372089804547104)
+Parameter Group ID: 1
+	Number of parameters: 2
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param actgel_rb_mtrans: [0.1]
+			Param actgel_rb_mrot: [0.1]
+			Metric rb2_acceptance: 0.3016111111111111 (+- 0.0215269053586666)
+Parameter Group ID: 2
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 1
+	Maximum Depth: 0
+	Optimization Status: Successful
+		Successful Node Depth: 0
+		Optimal Parameters with corresponding metric values (and sd):
+			Param bead_mt: [3.7142856]
+			Metric bead_acceptance: 0.462948309178744 (+- 0.0015224522522004234)
+_________________
+
+Input options: 
+	COMMAND : ../../imp-custom/build/setup_environment.sh python -u modeling_manual.py
+	n_per_command : 1
+	n_frames_per_run : 5000
+	max_np : 31
+	max_wait : 60
+	m_1d : 8
+	m_2d : 4
+	repeat : 3
+	cleanup : 0
+	verbosity : 0
+	max_depth : 5
+	plotting : 1
+	path : ./optimization_data
+	stopping_eq : 0
+	stopping_param : 0
+	stopping_err : 1
+	analysis_wrapper : <function DefaultAnalysis at 0x7f3f010f7e50>
+	m_3d : 3
+	m_4d : 3
+	m_5d : 3
+	parameters : [['tropo_rb_mtrans', 'tropo_rb_mrot', 'actgel_rb_mtrans', 'actgel_rb_mrot', 'bead_mt'], [0, 0, 1, 1, 2], [[0.1, 1.0], [0.1, 0.5], [0.1, 1.0], [0.1, 0.5], [2.0, 5.0]]]
+	metrics : [['rb1_acceptance', 'rb2_acceptance', 'bead_acceptance'], [0, 1, 2], [[0.3, 0.5], [0.3, 0.5], [0.4, 0.5]], ['MonteCarlo_Acceptance_P29246', 'MonteCarlo_Acceptance_P29248', 'MonteCarlo_Acceptance_BallMover']]
+	m_nd : [4, 3, 3, 3]
