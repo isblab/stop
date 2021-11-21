@@ -113,5 +113,10 @@ Another important step is to make sure your runs have equilibriated. StOP output
 
 ![neq](neq.png)
 
+Lastly you can also check the flags listed under "issues" section in the report for different parameter groups. These include the following (with suggested mitigations):
+1. No iterable ranges at root node -> Change the input domain. If you suspect a complicated landscape, increase the value of `m`
+2. No overlapping ranges -> Try increasing `m`. Double check the validity of the metrics affected by each parameter. This could also mean that it is impossible to optimize all the metrics simultaneously. 
+3. Maximum depth exceeded -> In most cases, increasing the maximum depth will lead to a successful optimization. However, if the standard deviation of the metrics for each repeat-set of runs (see the plots for the sd comparison) is high, this could be because of a false classification of a range as an iterable range. Increasing the number of repeats here might be helpful.
+
 
 That's all! We hope you enjoy running StOP! Please let us know if you encounter any problems!

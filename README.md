@@ -64,6 +64,8 @@ def foo(names_of_files, metric_names, param_search_names, plot):
 ```
 Here, `names_of_files` will be a list of the locations where the stat/replica_stat files are stored for each run (each member of the list corresponds to a separate run). `metric_names` are the names of the metrics that need to be analyzed and the `param_search_names` are the regex strings inputted in the options file. `plot` can be ignored. `error` evaluates to `True` if the analysis did not encounter any errors, and `False` otherwise (it is preferable to catch errors this way rather than raise the error). `equilibriation` is a dictionary with the keys being the elements of the list `names_of_files` and the values are booleans representing if the corresponding runs equilibriated (`True`) or not. `results` is a dictionary, the keys of which are the elements of the list `metric_names` and the value is a tuple (mean, sd) of the corresponding metric for the set of runs `names_of_files`. 
 
+The custom script can be added to the input options file as `analysis_wrapper : <name_of_file> : foo`
+
 ### Upcoming changes
 
 1. A tutorial to optimize replica exchange maximum temperature
