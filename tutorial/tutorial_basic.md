@@ -98,13 +98,19 @@ Overall, the report shows that that all the parameter groups were successful, i.
 
 ### Troubleshooting
 In case some of the parameter groups failed to be optimized, StOP outputs several useful ways to troubleshoot the issue. First level is to run StOP at maximum verbosity and notice all the warnings and errors that are printed. At the second level, the plots are useful. For `n < 3`, there are two plots per parameter group. One of them (`<metric_name>_overall_progress.png`) shows the metric-landscape at the candidate points which StOP explored, i.e. the actual values of the metrics that were obtained in the different runs. Two example plots are shown below. In case you notice that all the metric values that you obtained are higher (or lower) than your target range, you can alter the input domain of the parameters accordingly.
+
 ![plot_landscape_1d](2_bead_acceptance_overall_progress.png)
+
 ![plot_landscape_2d](0_rb1_acceptance_overall_progress.png)
+
 Another plot (`<metric_name>_sd_comparison.png`) compares the standard deviation of the metrics across the repeats to the size of the target range. If you notice that the standard deviation across the repeats is higher than (or close to) the target range, one option is to increase the number of repeats. See an example plot below. The ordering of the points on the x-axis is not useful. 
+
 ![plot_sd_1](0_rb1_acceptance_sd_comparison.png)
 
 Another important step is to make sure your runs have equilibriated. StOP outputs warning in case it detects non-equilibriated runs, and can also output plots that allow you to get an idea of the total score across the frames. Usually, increasing the number of frames fixes this issue. Note that runs not having equilibriated is a soft-warning in StOP since the results can often be valid despite that. And not all equilibriated runs will be flagged by StOP since the test used is a simple comparison of the means of the penultimate and ultimate quarter of the frames. Shown below are two example plots, the first one is an equilibriated run and the next one is a run that was flagged as being non-equilibriated. You can find these plots in `logs` folder under appropriate subfolders.
+
 ![eq](eq.png)
+
 ![neq](neq.png)
 
 
