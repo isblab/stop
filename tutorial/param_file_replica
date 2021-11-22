@@ -1,0 +1,14 @@
+METRIC : rex_ratio : 0.1,0.3 : MinTempReplicaExchangeRatio
+PARAM : max_temp : rex_ratio : 1.25,4
+COMMAND : ../../../../imp-custom/build/setup_environment.sh mpirun -np 4 python -u new_script.py
+n_per_command : 4
+n_frames_per_run : 5000
+max_np : 8
+max_wait : 60
+m_1d : 4
+repeat : 4
+cleanup : 0
+verbosity : 2
+max_depth : 5
+plotting : 2
+path : ./optimization_data

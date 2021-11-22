@@ -18,7 +18,7 @@ Apart from `python3` and a `linux` system, the code requires the following pytho
 4. `python main.py YOUR_INPUT_FILE`
 
 ### Overall workflow
-For an IMP-specific tutorial, see [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_basic.md) for a basic tutorial. More tutorials upcoming!
+For an IMP-specific tutorial, see [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_basic.md) for a basic tutorial and [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_replica.md) for a tutorial on optimizing the replica-exchange acceptance ratio.
 
 StOP requires all the input information to be presented as an input file (see below for the format). It requires two other scripts. One script, the IMP modeling script (which represents the metric function) needs to be specified in form of a command to be run at the different parameter values specified in the input file. Another is the optional custom analysis script for which the default analysis script is present in the repository. The algorithm proceeds by parallelizing several invocations of the modeling script and then calling the analysis script on the outputs.
 
@@ -42,6 +42,7 @@ One or more of the following options must be present in a valid input file. You 
 |`path : <value>`|a valid file path (default = `./`)|a path to store all the optimization runtime data in. The IMP output will be stored under folders named `output_<number>` within this path|
 |`verbosity : <value>`|0, 1, 2| 0 -> 2 increasing verbosity of the progress|
 |`plotting : <value>`|0, 1, 2| 0 -> 2 increasing level of plotting|
+|`cleanup : <value>`|0, 1, 2|Whether to cleanup the stat files, stdout and stderr records of the different optimization runs or not. 0 implies no cleanup. It is strongly recommended to keep it to 0 unless there are space constraints|
 |`n_per_command : <value>`|any integer| Number of processes spawned per command invocation. Relevant for `mpirun` based replica exchange. Allows for a better progress bar.|
 |`n_frames : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
 |`max_wait : <value>`|any integer (default = 60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|

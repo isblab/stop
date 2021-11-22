@@ -1,0 +1,40 @@
+Total Time Taken: 17688 seconds
+Total Blocks/Commands loaded: 2/32
+Total Params/Param-groups: 1/1
+Total Metrics: 1
+Parameter Group ID: 0
+	Number of parameters: 1
+	Number of metrics: 1
+	Number of Nodes run: 2
+	Maximum Depth: 1
+	Optimization Status: Successful
+		Successful Node Depth: 1
+		Optimal Parameters with corresponding metric values (and sd):
+			Param max_temp: [1.43333335 1.6166667  1.80000005]
+			Metric rex_ratio: 0.2491 (+- 0.015227278154680179), 0.17120000000000002 (+- 0.01705051318875769), 0.1174 (+- 0.009335952013587048)
+_________________
+
+Input options: 
+	COMMAND : ../../../../imp-custom/build/setup_environment.sh mpirun -np 4 python -u new_script.py
+	n_per_command : 4
+	n_frames_per_run : 5000
+	max_np : 8
+	max_wait : 60
+	m_1d : 4
+	repeat : 4
+	cleanup : 0
+	verbosity : 2
+	max_depth : 5
+	plotting : 2
+	path : ./optimization_data
+	stopping_eq : 0
+	stopping_param : 0
+	stopping_err : 1
+	analysis_wrapper : <function DefaultAnalysis at 0x7ff851a8dee0>
+	m_2d : 3
+	m_3d : 3
+	m_4d : 3
+	m_5d : 3
+	parameters : [['max_temp'], [0], [[1.25, 4.0]]]
+	metrics : [['rex_ratio'], [0], [[0.1, 0.3]], ['MinTempReplicaExchangeRatio']]
+	m_nd : [3, 3, 3, 3]
