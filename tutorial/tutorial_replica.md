@@ -1,6 +1,6 @@
 # StOP tutorial for Integrative Modeling on IMP with Replica Exchange
 
-We shall be using the the gtusc-Spc110 complex for this tutorial. To begin, first familiarize yourself with the usual IMP workflow, a model script and the basics of IMP modeling. You can have a look at the [actin tutorial](https://integrativemodeling.org/tutorials/actin/) for that. Next, go through the basic StOP tutorial [here](https://github.com/isblab/stop/blob/main/tutorials/tutorial_basic.md)
+We shall be using the the gtusc-Spc110 complex for this tutorial. To begin, first familiarize yourself with the usual IMP workflow, a model script and the basics of IMP modeling. You can have a look at the [actin tutorial](https://integrativemodeling.org/tutorials/actin/) for that. Next, go through the basic StOP tutorial [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_basic.md)
 
 ### Setting the stage
 Firstly, we download the scripts and the input data from the [GitHub repository](https://github.com/integrativemodeling/gtuscSpc110). We primarily need two folders, `inputs` and `script` for this tutorial. Next, make sure you have IMP installed and have installed all the requirements for StOP (`pip install -r requirements.txt`) and also have Open-mpi setup and have loaded the module (to be able to use the `mpirun` command). Finally, copy the four StOP files (`main.py`, `utils.py`, `analyzer.py`, `optimizer.py`) in the folder `scripts/sample` (so that we do not have to keep adding complicated paths to access the files. Otherwise, you can keep these files anywhere you want as long as you modify the paths appropriately). Finally, create a folder called `optimization_data` which stores all the output from StOP.
@@ -23,7 +23,7 @@ Remember to have loaded the `open-mpi` module depending on your usual IMP setup 
 COMMAND : IMP_PATH/setup_environment.sh mpirun -np 4 python -u new_script.py
 ```
 #### Other options
-This time, some of the other options have to be chosen carefully. The `max_np` parameter runs these many parallel StOP runs, but in our case, each of these runs contains 4 replicas (and hence needs 4 cores). We can either scale down this parameter based on this knowledge or set `n_per_command` to 4. Another important option to consider here is the `cleanup` option since the runs can generate a large amount of data and there is no safety mechanism to check if enough space is available. The complete options files is called `param_file_replica` in the folder.
+This time, some of the other options have to be chosen carefully. The `max_np` parameter runs these many parallel StOP runs, but in our case, each of these runs contains 4 replicas (and hence needs 4 cores). We can either scale down this parameter based on this knowledge or set `n_per_command` to 4 (the latter being the preferred approach). Another important option to consider here is the `cleanup` option since the runs can generate a large amount of data and there is no safety mechanism to check if enough space is available. The complete options files is called `param_file_replica` in the folder.
 
 ### Running StOP
 Next step is to run StOP on our setup as previously described and wait for StOP to do its work!

@@ -35,7 +35,7 @@ One or more of the following options must be present in a valid input file. You 
 ### Optional options
 | Option format | Allowed values and default | Description |
 |:-------------:|:-------:|:-------:|
-|`max_np : <value>`| any integer (default = `os.cpu_count()`) | maximum_number of subprocesses spawned in parallel (note this is in addition to the 3 background processes)|
+|`max_np : <value>`| any integer (default = `os.cpu_count()`) | maximum_number of subprocesses spawned in parallel (note this is in addition to the 3 background processes). When using `mpirun`, each subprocess can itself contain multiple processes|
 |`max_depth : <value>`|any integer (default = 5)|maximum allowable depth of the DFS tree|
 |`repeat : <value>`|any integer (default = 3)|number of times to rerun the script at the same parameter values to average the stochastic variation|
 |`m_<n>d : <value>`|any integer|specify the `m(n)` as specified in the manuscript. One can individually set the value of `m` for different `n` by using multiple `m_<n>d` keys with different `n`|
@@ -69,7 +69,7 @@ The custom script can be added to the input options file as `analysis_wrapper : 
 
 ### Upcoming changes
 
-1. A tutorial to optimize replica exchange maximum temperature
+1. ~A tutorial to optimize replica exchange maximum temperature~
 2. Cooler documentation!
 3. More comprehensive tests and coverage report badge on the readme
 4. Sampling the inner regions of hyper-rectangles by allowing diagonal iterable ranges

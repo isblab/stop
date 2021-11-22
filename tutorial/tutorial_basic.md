@@ -57,7 +57,7 @@ COMMAND : IMP_PATH/setup_environment.sh python -u modeling_manual.py
 #### Other options
 There are several other options that can be specified in the file. Most of them have defaults and are optional. However, it is a good idea to explicitly state them since many of the defaults may not be optimal for the particular machine on which the optimization is being run. For details, read the [README](https://github.com/isblab/stop/blob/main/README.md) on this repository.
 
-The options that we add here will tell StOP to output all the optimization data to a folder called `optimization_data` that we created earlier. We shall use 3 repeats for each parameter combination, and will be running for 5000 frames. The `m(1)` and `m(2)` values depend on the machine and the expected runtime, but we shall keep this to 8 and 4 respectively. These need to be carefully chosen to maximally utilize the available CPUs.
+The options that we add here will tell StOP to output all the optimization data to a folder called `optimization_data` that we created earlier. We shall use 3 repeats for each parameter combination, and will be running for 5000 frames. The ideal number of frames is such that the run equilibriates in half those many frames. The `m(1)` and `m(2)` values depend on the machine and the expected runtime, but we shall keep this to 8 and 4 respectively. These need to be carefully chosen to maximally utilize the available CPUs.
 
 Have a look at the `param_file` to see the final completed file. There are a lot of optional options that make the progress printing much more informative. It is recommended to specify as many options explicitly as possible.
 
