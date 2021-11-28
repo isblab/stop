@@ -14,16 +14,16 @@ Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for
 
 Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444).
 
-### Requirements
+## Requirements
 Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. You can install all of them using `pip install -r requirements.txt`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
 
-### Installation and General Usage:
+## Installation and General Usage
 1. Make sure all the necessary modules are installed
 2. Clone the repository or copy the files `main,py`, `utils.py`, `optimizer.py` and, optionally, depending on your usage, `analyzer.py` to a directory of your choosing
 3. Create an input file with runtime options and the parameter/metric inputs (described below)
 4. `python main.py YOUR_INPUT_FILE`
 
-### Overall workflow
+## Overall workflow
 For an IMP-specific tutorial, see [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_basic.md) for a basic tutorial and [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_replica.md) for a tutorial on optimizing the replica-exchange acceptance ratio.
 
 StOP requires all the input information to be presented as an input file (see below for the format). It requires two other scripts. One script, the IMP modeling script (which represents the metric function) needs to be specified in form of a command to be run at the different parameter values specified in the input file. Another is the optional custom analysis script for which the default analysis script is present in the repository. The algorithm proceeds by parallelizing several invocations of the modeling script and then calling the analysis script on the outputs.
@@ -31,7 +31,7 @@ StOP requires all the input information to be presented as an input file (see be
 ## Input file format
 Each line in the input file represents a `KEY : VALUE1 : VALUE2 ...` binding where `KEY` specifies the name of the option and one or more `VALUE`s specify the value(s) of the option or its attributes.
 
-#### Compulsory Options
+### Compulsory Options
 One or more of the following options must be present in a valid input file. You should replace all values in `<>` with appropriate values for your use case.
 
 1. `METRIC : <name> : <low>,<high> : <regex_search_string>` (The target range of the metric is set as `[<low>, <high>]`. The search string is matched to all the keys of the *stat_file* and the *replica_stat_file* and all matching keys are averaged to get the value of the metric. See analysis details below.)
@@ -57,7 +57,7 @@ One or more of the following options must be present in a valid input file. You 
 |`analysis_wrapper : <file> : <function>`||see below for details|
 
 
-### Analysis Details
+## Analysis Details
 
 By default, StOP uses the Default analysis file `analyzer.py`. The user submitted regex strings are matched across all the keys in stat-file, and on failing to match any keys, the stat-replica-files. There are two special keys that you can use with the default analysis function, `MinTempReplicaExchangeRatio` and `AllTempReplicaExchangeRatio`. Explore the replica exchange tutorial for more details (upcoming). Next, the values for these matched headers are extracted. The total score of the run is then checked for equilibriation by comparing the mean of the final quarter of frames to the penultimate quarter. If either of the means are outside 2SD of either of the quarters, the run is classified as unequilibriated (the downstream behavior in this case depends on the options). Next, the matched headers are extracted for the final half of the runs. These are assumed to be cumulative statistics and a correction is applied to them to fix this (to override this, you can create a custom analysis script as described below). Next, they are averaged across the matched headers, across the frames and across replicas (if applicable).
 
@@ -73,7 +73,7 @@ Here, `names_of_files` will be a list of the locations where the stat/replica_st
 
 The custom script can be added to the input options file as `analysis_wrapper : <name_of_file> : foo`
 
-### Upcoming changes
+## Upcoming changes
 
 1. ~A tutorial to optimize replica exchange maximum temperature~
 2. Cooler documentation!
