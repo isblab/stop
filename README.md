@@ -8,6 +8,12 @@
 StOP is a gradient-free, parallel, global, stochastic, multi-objective optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
 The code can be adapted to any suitable optimization problem.
 
+### Manuscript
+
+Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies. Life. 2021; 11(11):1183. https://doi.org/10.3390/life11111183
+
+Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444).
+
 ### Requirements
 Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. You can install all of them using `pip install -r requirements.txt`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
 
@@ -74,8 +80,3 @@ The custom script can be added to the input options file as `analysis_wrapper : 
 3. More comprehensive tests and coverage report badge on the readme
 4. Sampling the inner regions of hyper-rectangles by allowing diagonal iterable ranges
 
-### Manuscript
-
-Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies. Life. 2021; 11(11):1183. https://doi.org/10.3390/life11111183
-
-The relevant paper can be found [here](https://doi.org/10.3390/life11111183). Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444).
