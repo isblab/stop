@@ -714,10 +714,12 @@ class Optimizer:
                 warning_jobs += unequilibriated
             if self.stop_err and (not error_check):
                 message = (time.time(), 'WARNING', f'Error in analysis {values}. Terminating', 'OPTIMIZER')
+                warnings.warn(f'Error in analysis: {values}', RuntimeWarning)
                 self.logger_queue.put(message)
                 terminate = True
             elif not error_check:
                 message = (time.time(), 'WARNING', f'Error in analysis {values}.', 'OPTIMIZER')
+                warnings.warn(f'Error in analysis: {values}', RuntimeWarning)
                 self.logger_queue.put(message)
                 warning_jobs_err += jobs
             if terminate:

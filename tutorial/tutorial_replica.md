@@ -23,7 +23,7 @@ Remember to have loaded the `open-mpi` module depending on your usual IMP setup 
 COMMAND : IMP_PATH/setup_environment.sh mpirun -np 4 python -u new_script.py
 ```
 #### Other options
-This time, some of the other options have to be chosen carefully. The `max_np` parameter runs these many parallel StOP runs, but in our case, each of these runs contains 4 replicas (and hence needs 4 cores). We can either scale down this parameter based on this knowledge or set `n_per_command` to 4 (the latter being the preferred approach). Another important option to consider here is the `cleanup` option since the runs can generate a large amount of data and there is no safety mechanism to check if enough space is available. The complete options files is called `param_file_replica` in the folder.
+This time, some of the other options have to be chosen carefully. The `max_np` parameter runs these many parallel StOP runs, but in our case, each of these runs contains 4 replicas (and hence needs 4 cores). We can scale down this parameter based on this knowledge or set `n_per_command` to 4 without specifying the `max_np` to use the `default max_np // n_per_command`. However, if you specify both the options, the `max_np` you specify will be used without any alteration or division. Another important option to consider here is the `cleanup` option since the runs can generate a large amount of data and there is no safety mechanism to check if enough space is available. The complete options files is called `param_file_replica` in the folder.
 
 ### Running StOP
 Next step is to run StOP on our setup as previously described and wait for StOP to do its work!
