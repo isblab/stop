@@ -201,7 +201,7 @@ def find_1d_interpolated_overlapping_width(a_list, upper_list, lower_list, n=100
     foos = [interp1d(np.arange(len(a)), a, kind=kind) for a in a_list]
     range_dict = dict()
     for i in range(1, len(a_list[0])):
-        queries = [np.linspace(i - 1, i, n) for a in a_list]
+        queries = [np.linspace(i - 1, i, n) for a in range(len(a_list))]
         values = [foo(queries) for foo in foos]
         within_range_check = [np.logical_and(values[j] <= upper_list[j], values[j] >= lower_list[j]) for j in
                               range(len(values))]

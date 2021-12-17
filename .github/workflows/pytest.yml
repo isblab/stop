@@ -26,7 +26,7 @@ jobs:
     - name: Lint with flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 . --count --exit-zero --max-complexity=15 --exclude=./paper/*,./tests/*,./tutorial/* --max-line-length=127 --statistics
+        flake8 . --count --exit-zero --max-complexity=15 --exclude=./tests/*,./docs/* --max-line-length=127 --statistics
     - name: Prepate test data
       run: |
         mkdir tests/test_data/output1

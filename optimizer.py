@@ -162,7 +162,7 @@ class ParameterGroup:
         if len(self.parameter_names) == 2:  # Needs a 2D plot
             figs, axs = [], []
             depths_taken = []  # To prevent overburdening the legend
-            for m in self.metric_names:
+            for m in range(len(self.metric_names)):
                 fig, ax = plt.subplots()
                 figs.append(fig)
                 axs.append(ax)
@@ -232,7 +232,7 @@ class ParameterGroup:
         if len(self.parameter_names) == 1:
             figs, axs = [], []
             depths_taken = []
-            for m in self.metric_names:
+            for i in range(len(self.metric_names)):
                 fig, ax = plt.subplots()
                 figs.append(fig)
                 axs.append(ax)

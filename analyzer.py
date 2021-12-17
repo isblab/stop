@@ -102,11 +102,11 @@ def parser(path):  # To parse all the stat files
     main_array_replica = []  # contains the parsed dictionaries according to the stat_replica_files
     for i in stat_replica_files:
         with open(path + '/' + i) as f:
-            rd = f.readline()  # discard line 1
             sub_array = []
             for line in f:
                 sub_array.append(eval(line))
                 # each element is a dictionary with integer keys
+            del sub_array[0]  # discard line #1
             main_array_replica.append(np.vstack([[x[y] for y in range(len(x))] for x in sub_array]))
 
     inverted_dict = dict()  # For heading -> number mapping
@@ -130,10 +130,10 @@ def parser(path):  # To parse all the stat files
     main_array = []  # contains the parsed dictionaries according to the stat_files
     for i in stat_files:
         with open(path + '/' + i) as f:
-            rd = f.readline()
             sub_array = []
             for line in f:
                 sub_array.append(eval(line))
+            del sub_array[0]  # discard line 1
             if len(sub_array) == 0:
                 continue
             main_array.append(np.vstack([[x[y] for y in range(len(x))] for x in sub_array]))
@@ -202,7 +202,7 @@ def check_equilibriation(series, plot, name, sigma=2, piece=0.25):
 
 def DefaultAnalysis(names_of_files, metric_names, param_search_names, plot):
     results = dict()
-    temp = [[] for i in metric_names]
+    temp = [[] for _ in range(len(metric_names))]
     equilibriation = dict()
     for i in names_of_files:
         success, vals = parser(i)

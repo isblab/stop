@@ -23,8 +23,9 @@ Apart from `python3` and a `linux` system, the code requires the following pytho
 3. Create an input file with runtime options and the parameter/metric inputs (described below)
 4. `python main.py YOUR_INPUT_FILE`
 
-## Overall workflow
-For an IMP-specific tutorial, see [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_basic.md) for a basic tutorial and [here](https://github.com/isblab/stop/blob/main/tutorial/tutorial_replica.md) for a tutorial on optimizing the replica-exchange acceptance ratio.
+## Overall workflow and Tutorials
+
+**For an IMP-specific tutorial, see [here](https://github.com/isblab/stop/blob/main/docs/tutorial_basic.md) for a basic tutorial and [here](https://github.com/isblab/stop/blob/main/docs/tutorial_replica.md) for a tutorial on optimizing the replica-exchange acceptance ratio.**
 
 StOP requires all the input information to be presented as an input file (see below for the format). It requires two other scripts. One script, the IMP modeling script (which represents the metric function) needs to be specified in form of a command to be run at the different parameter values specified in the input file. Another is the optional custom analysis script for which the default analysis script is present in the repository. The algorithm proceeds by parallelizing several invocations of the modeling script and then calling the analysis script on the outputs.
 
