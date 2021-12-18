@@ -1,6 +1,7 @@
 # StOP: Stochastic Optimization of Parameters for IMP
 
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/isblab/stop.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/isblab/stop/context:python)
 
 ![5z](https://user-images.githubusercontent.com/8314735/140460073-3093167c-dbc4-4560-bbb3-6e6c74d79124.png)
 
@@ -53,8 +54,8 @@ One or more of the following options must be present in a valid input file. You 
 |`n_per_command : <value>`|any integer| Number of processes spawned per command invocation. Relevant for `mpirun` based replica exchange. Allows for a better progress bar.|
 |`n_frames : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
 |`max_wait : <value>`|any integer (default = 60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|
-|`stopping_eq : <value>`|0, 1 (default = 0)| Whether to StOP is any of the runs fails to equilibriate during analysis (currently not fully implemented)|
-|`stopping_err : <value>`|0, 1 (default = 1)| Whether to StOP is any of the runs throws an error during analysis. Only change this if you have a custom StOP setup|
+|`stopping_eq : <value>`|0, 1 (default = 0)| Whether to consider failing to equilibriate as an error during analysis. Only relevant if `stopping_err` is active|
+|`stopping_err : <value>`|0, 1 (default = 1)| Whether to stop if any of the runs throws an error during analysis. Only change this if you have a custom StOP setup|
 |`analysis_wrapper : <file> : <function>`||see below for details|
 
 
