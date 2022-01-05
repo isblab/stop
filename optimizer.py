@@ -5,6 +5,7 @@ import warnings
 import re
 import shlex
 import copy
+import matplotlib
 from shutil import rmtree
 from matplotlib import cm
 import matplotlib.pyplot as plt
@@ -12,6 +13,7 @@ from matplotlib.colors import ListedColormap, Normalize
 from itertools import product
 from utils import iterate_over_all_axes, Job
 from tqdm import tqdm
+matplotlib.use('agg')
 
 
 # Contains all the details of a single parameter group (methods allow updating the DFS-tree for this group)
