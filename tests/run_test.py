@@ -21,7 +21,7 @@ def test_analyzer():
     os.chdir('..')
 
 
-def test_runexamples():
+def test_runexamples_1():
     os.chdir('./tests')
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file'], text=True, capture_output=True)
@@ -32,6 +32,11 @@ def test_runexamples():
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 4, rd
         assert len([x for x in rd if 'Optimization Status: Failed' in x]) == 2, rd
     shutil.rmtree('./temp_data')
+    os.chdir('..')
+
+
+def test_runexamples_2():
+    os.chdir('./tests')
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file2'], text=True, capture_output=True)
     assert s.returncode == 0
@@ -40,6 +45,11 @@ def test_runexamples():
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 2, rd
     shutil.rmtree('./temp_data')
+    os.chdir('..')
+
+
+def test_runexamples_3d():
+    os.chdir('./tests')
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file3d'], text=True, capture_output=True)
     assert s.returncode == 0
@@ -48,6 +58,11 @@ def test_runexamples():
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 1, rd
     shutil.rmtree('./temp_data')
+    os.chdir('..')
+
+
+def test_runexamples_3():
+    os.chdir('./tests')
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file3'], text=True, capture_output=True)
     assert s.returncode == 0
