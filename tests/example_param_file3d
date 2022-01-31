@@ -6,7 +6,7 @@ PARAM : b : ma,mb,mc : -1,1
 PARAM : c : ma,mb,mc : -1,1
 COMMAND : python -u testing_foo3d.py
 m_1d : 3
-repeat : 1
+repeat : 2
 cleanup : 0
 verbosity : 2
 max_wait : 1

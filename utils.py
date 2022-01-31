@@ -172,24 +172,6 @@ class Executor:
         self.logger_queue.put(message)
 
 
-# To find the "best" iterable range given a line of values based on interpolated values lying in the target range
-def find_1d_interpolated_width(a, upper, lower, n=100):
-    if len(a) > 3:
-        kind = 'cubic'
-    elif len(a) >= 2:
-        kind = 'quadratic'
-    else:
-        kind = 'linear'
-    foo = interp1d(np.arange(len(a)), a, kind=kind)
-    range_dict = dict()
-    for i in range(1, len(a)):
-        queries = np.linspace(a[i - 1], a[i], n)
-        values = foo(queries)
-        # number of points lying in the range is the proxy for how good is this range for subsequent iteration
-        range_dict[(i - 1, i)] = np.sum(np.logical_and(values <= upper, values >= lower)) / 100
-    return range_dict
-
-
 # Same as above but for multiple metrics
 def find_1d_interpolated_overlapping_width(a_list, upper_list, lower_list, n=100):
     if len(a_list[0]) > 3:
@@ -208,19 +190,6 @@ def find_1d_interpolated_overlapping_width(a_list, upper_list, lower_list, n=100
         within_range_check = np.logical_and.reduce(within_range_check)
         range_dict[(i - 1, i)] = np.sum(within_range_check) / 100
     return range_dict
-
-
-# Find iterable ranges given a single line of metric values
-def find_1d_ranges(a, upper_lim, lower_lim, point_ids):
-    in_range = np.logical_and(a <= upper_lim, a >= lower_lim)
-    greater = a > upper_lim
-    lower = a < lower_lim
-    range_dict = find_1d_interpolated_width(a, upper_lim, lower_lim)
-    iterable_ranges = []
-    for i in range(1, len(a)):
-        if (greater[i - 1] ^ greater[i]) or (lower[i - 1] ^ lower[i]) or any([in_range[i - 1], in_range[i]]):
-            iterable_ranges.append((point_ids[i - 1], point_ids[i], range_dict[(i - 1, i)]))
-    return iterable_ranges, in_range
 
 
 # Same as above but for multiple metrics
