@@ -1,7 +1,6 @@
 [run]
 branch = True
 concurrency = multiprocessing
-append = True
 parallel = True
 omit = ./tests/*,./docs/*
 
