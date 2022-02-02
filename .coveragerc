@@ -1,8 +1,0 @@
-[run]
-branch = True
-concurrency = multiprocessing
-omit = ./docs/*
-
-[report]
-show_missing = True
-skip_covered = False
