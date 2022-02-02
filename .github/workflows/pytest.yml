@@ -37,5 +37,5 @@ jobs:
         7z x tests/test_data/test_data.7z -otests/test_data/output3
     - name: Test with pytest
       run: |
-        coverage --append --branch --concurrency=multiprocessing --omit=./tests/*,./docs/* run pytest
+        coverage run --append --branch --concurrency=multiprocessing --omit=./tests/*,./docs/* pytest
         coverage report --show-missing --no-skip-covered
