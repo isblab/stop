@@ -38,3 +38,15 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --cov --cov-branch --cov-report term-missing --cov-append
+        coverage json
+        echo 'COV_PERC=$(python tests/json_parse.py)' >> $GITHUB_ENV
+        echo '${{ env.COV_PERC }}'
+    - name: Create the Badge
+      uses: schneegans/dynamic-badges-action@v1.1.0
+      with:
+        auth: ${{ secrets.GIST_BADGE_SECRET }}
+        gistID: b7ce3f2fa674521d574e3830d7970724
+        filename: coverage_total.json
+        label: Coverage
+        message: ${{ env.COV_PERC }}
+        color: blue
