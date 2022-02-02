@@ -1,0 +1,10 @@
+[run]
+branch = True
+concurrency = multiprocessing
+append = True
+parallel = True
+omit = ./tests/*,./docs/*
+
+[report]
+show_missing = True
+skip_covered = False

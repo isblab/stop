@@ -19,7 +19,7 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        sudo apt install p7zip-full p7zip-rar gcc python3-dev
+        sudo apt install p7zip-full p7zip-rar gcc
         python -m pip install --upgrade pip
         pip install flake8 pytest coverage
         pip install -r requirements.txt
@@ -37,5 +37,6 @@ jobs:
         7z x tests/test_data/test_data.7z -otests/test_data/output3
     - name: Test with pytest
       run: |
-        coverage run --append --branch --concurrency=multiprocessing --omit=./tests/*,./docs/* pytest
-        coverage report --show-missing --no-skip-covered
+        coverage run pytest
+        coverage combine --append
+        coverage report
