@@ -37,6 +37,5 @@ jobs:
         7z x tests/test_data/test_data.7z -otests/test_data/output3
     - name: Test with pytest
       run: |
-        coverage run -m pytest
-        coverage combine --append
+        coverage run -m --append pytest
         coverage report

@@ -1,7 +1,6 @@
 [run]
 branch = True
 concurrency = multiprocessing
-parallel = True
 omit = ./tests/*,./docs/*
 
 [report]
