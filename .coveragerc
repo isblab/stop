@@ -1,7 +1,7 @@
 [run]
 branch = True
 concurrency = multiprocessing
-omit = ./tests/*,./docs/*
+omit = ./docs/*
 
 [report]
 show_missing = True
