@@ -2,7 +2,7 @@
 branch = True
 concurrency = multiprocessing
 parallel = True
-omit = ./docs/*
+omit = ./tests/*,./docs/*
 
 [report]
 show_missing = True
