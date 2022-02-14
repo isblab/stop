@@ -150,9 +150,9 @@ def parser(path):  # To parse all the stat files
         x += main_array[i].tolist()
     z = sorted(zip(collated_order, x))
     z = [i[1] for i in z]  # properly ordered list of dictionaries (with stat file fields)
-    main_order_2 = np.array([int(i[inverted_dict['MonteCarlo_Nframe']]) for i in z])
+    main_order_2 = np.diff(np.array([int(i[inverted_dict['MonteCarlo_Nframe']]) for i in z]))
     # confirm that MonteCarlo_Nframe matches the order based on temperature 1
-    if not (len(np.unique(main_order_2)) == 1) and (np.unique(main_order_2)[0] == 1):
+    if not ((len(np.unique(main_order_2)) == 1) and (np.unique(main_order_2)[0] == 1)):
         return False, 'Temperature based frame ordering does not match MonteCarlo_Nframe'
     x = []
     for i in range(len(main_array)):

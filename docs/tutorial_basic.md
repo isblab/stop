@@ -66,7 +66,7 @@ First, we need to modify the modeling script to accept StOP-modified parameters 
 
 StOP feeds the parameters in the same order as they appear on the input options file, followed by an extra entry specifying the output path which needs to be input to the `IMP.pmi.macros.ReplicaExchange0` object as the output directory (it is important since StOP needs to manage where all the data is outputted in order to analyze the correct directories. However, with a custom analysis script, it is possible to use complicated output directory structures too.) 
 
-```
+```python
 import sys
 tropo_rb_mtrans, tropo_rb_mrot, actgel_rb_mtrans, actgel_rb_mrot, bead_mt = map(float, sys.argv[1:6])
 output_path_from_cl = sys.argv[6]
