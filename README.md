@@ -80,6 +80,6 @@ The custom script can be added to the input options file as `analysis_wrapper : 
 
 1. ~A tutorial to optimize replica exchange maximum temperature~
 2. Cooler documentation!
-3. More comprehensive tests and coverage report badge on the readme
+3. More comprehensive tests and ~coverage report badge on the readme~
 4. Sampling the inner regions of hyper-rectangles by allowing diagonal iterable ranges
 

@@ -13,6 +13,7 @@ from matplotlib.colors import ListedColormap, Normalize
 from itertools import product
 from utils import iterate_over_all_axes, Job
 from tqdm import tqdm
+
 matplotlib.use('agg')
 
 
@@ -197,7 +198,9 @@ class ParameterGroup:
                     all_vals = np.hstack([x[self.metric_names[j]].flatten() for x in self.metric_values_nodes])
                     mx, mn = np.nanmax(all_vals), np.nanmin(all_vals)
                     rng = self.metric_ranges[j]
-                    r1, r2 = (rng[0] - mn) / mx, (rng[1] - mn) / mx
+                    mx = max(mx, max(rng))
+                    mn = min(mn, min(rng))
+                    r1, r2 = (rng[0] - mn) / (mx - mn), (rng[1] - mn) / (mx - mn)
                     r1, r2 = int(r1 * 256), int(r2 * 256)
                     cmapnew = cmap(np.linspace(0, 1, 256))
                     pink = np.array([248 / 256, 24 / 256, 148 / 256, 1])
@@ -208,13 +211,15 @@ class ParameterGroup:
                     else:
                         lab = f'Depth {d}'
                     depths_taken[j].add(d)
-                    axs[j].scatter(p1, p2, c=cmapnew((mvals[j] - mn) / mx), marker=marker_list[d % len(marker_list)],
+                    axs[j].scatter(p1, p2, c=cmapnew((mvals[j] - mn) / (mx - mn)), marker=marker_list[d % len(marker_list)],
                                    label=lab, s=15, zorder=10)
             for i in range(len(self.metric_names)):
                 all_vals = np.hstack([x[self.metric_names[i]].flatten() for x in self.metric_values_nodes])
                 mx, mn = np.nanmax(all_vals), np.nanmin(all_vals)
                 rng = self.metric_ranges[i]
-                r1, r2 = (rng[0] - mn) / mx, (rng[1] - mn) / mx
+                mx = max(mx, max(rng))
+                mn = min(mn, min(rng))
+                r1, r2 = (rng[0] - mn) / (mx - mn), (rng[1] - mn) / (mx - mn)
                 r1, r2 = int(r1 * 256), int(r2 * 256)
                 cmapnew = cmap(np.linspace(0, 1, 256))
                 pink = np.array([248 / 256, 24 / 256, 148 / 256, 1])
@@ -289,7 +294,9 @@ class ParameterGroup:
             cmap = cm.get_cmap('viridis', 256)
             mx, mn = np.nanmax(temp), np.nanmin(temp)
             rng = self.metric_ranges[self.metric_names.index(m)]
-            r1, r2 = (rng[0] - mn) / mx, (rng[1] - mn) / mx
+            mx = max(mx, max(rng))
+            mn = min(mn, min(rng))
+            r1, r2 = (rng[0] - mn) / (mx - mn), (rng[1] - mn) / (mx - mn)
             r1, r2 = int(r1 * 256), int(r2 * 256)
             cmapnew = cmap(np.linspace(0, 1, 256))
             pink = np.array([248 / 256, 24 / 256, 148 / 256, 1])
@@ -298,7 +305,7 @@ class ParameterGroup:
             norm = Normalize(vmin=mn, vmax=mx)
             fig, ax = plt.subplots()
             temp = sorted(zip(temp, temp_sd))
-            ax.scatter(np.arange(len(temp)), np.zeros(len(temp)), c=cmapnew((np.array([x[0] for x in temp]) - mn) / mx),
+            ax.scatter(np.arange(len(temp)), np.zeros(len(temp)), c=cmapnew((np.array([x[0] for x in temp]) - mn) / (mx - mn)),
                        s=20, zorder=10)
             ax.errorbar(np.arange(len(temp)), np.zeros(len(temp)), yerr=[x[1] for x in temp], ecolor='black', capsize=3,
                         fmt='none', zorder=0)
