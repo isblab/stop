@@ -662,12 +662,13 @@ class Optimizer:
                 self.logger_queue.put(ms)
                 if (message.return_code != 0) and self.stop_err:
                     terminate = True
-                    message = (time.time(), 'WARNING', 'Terminating the run due to non-zero exit code', 'OPTIMIZER')
+                    message = (time.time(), 'ERROR', 'Terminating the run due to non-zero exit code', 'OPTIMIZER')
                     self.logger_queue.put(message)
+                    print(f'ERROR: Terminating due to a non-zero return-code for one of the runs: {message.identifier}')
         if not terminate:
             terminate = self.analyze(fresh_for_analysis)
         self.clean(fresh_for_analysis)
-        message = (time.time(), 'STATUS', 'Finished handling the last block', 'OPTIMIZER')
+        message = (time.time(), 'INFO', 'Finished handling the block', 'OPTIMIZER')
         self.logger_queue.put(message)
         return terminate
 
@@ -714,18 +715,21 @@ class Optimizer:
             if self.verbosity >= 2:
                 progress_bar.update(self.repeat)
             if self.stop_eq and (not equilibriation_check):
-                message = (time.time(), 'INFO', f'Failed equilibriation in {unequilibriated}. Terminating', 'OPTIMIZER')
+                message = (time.time(), 'ERROR', f'Failed equilibriation in {unequilibriated}. Terminating', 'OPTIMIZER')
                 self.logger_queue.put(message)
+                print(f'ERROR: Terminating due to failed equilibriation: {unequilibriated}')
                 terminate = True
+                warning_jobs += unequilibriated
             elif not equilibriation_check:
                 message = (time.time(), 'WARNING', f'Failed equilibriation in {unequilibriated}', 'OPTIMIZER')
                 self.logger_queue.put(message)
                 warning_jobs += unequilibriated
             if self.stop_err and (not error_check):
-                message = (time.time(), 'WARNING', f'Error in analysis {values}. Terminating', 'OPTIMIZER')
-                warnings.warn(f'Error in analysis: {values}', RuntimeWarning)
+                message = (time.time(), 'ERROR', f'Error in analysis {values}. Terminating', 'OPTIMIZER')
                 self.logger_queue.put(message)
+                print(f'ERROR: Terminating due to error in analysis: {values}')
                 terminate = True
+                warning_jobs_err += jobs
             elif not error_check:
                 message = (time.time(), 'WARNING', f'Error in analysis {values}.', 'OPTIMIZER')
                 warnings.warn(f'Error in analysis: {values}', RuntimeWarning)
@@ -737,9 +741,9 @@ class Optimizer:
         if self.verbosity >= 2:
             progress_bar.close()
         if len(warning_jobs) > 0:
-            warnings.warn(f'Failed to equilibriate in {warning_jobs}', RuntimeWarning)
+            warnings.warn(f'Failed to equilibriate in the following runs: {warning_jobs}', RuntimeWarning)
         if len(warning_jobs_err) > 0:
-            warnings.warn(f'Error in analysis {warning_jobs_err}.', RuntimeWarning)
+            warnings.warn(f'Error in analysis for the following runs: {warning_jobs_err}.', RuntimeWarning)
         message = (time.time(), 'INFO', 'Finished analysis', 'OPTIMIZER')
         self.logger_queue.put(message)
         return terminate
