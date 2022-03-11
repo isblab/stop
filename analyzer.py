@@ -164,6 +164,8 @@ def parser(path):  # To parse all the stat files
         values = [np.isinf(i[key]) for i in z]
         if any(values[int(0.1 * len(values)):]):  # arbitrary 10-percent cutoff
             return False, 'Infinity encountered after the first 10-percent of the frames'
+        if any(values[:int(0.1 * len(values))]):
+            print(f'WARNING: Infinity encountered in {key} in the first 10-percent frames at {path}')
     return True, (z, z_replica, main_array, main_array_replica, inverted_dict, inverted_dict_replica, main_order)
 
 
