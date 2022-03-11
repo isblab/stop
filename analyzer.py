@@ -161,7 +161,7 @@ def parser(path):  # To parse all the stat files
     z_replica = sorted(zip(collated_order, x))
     z_replica = [i[1] for i in z_replica]  # properly ordered list of dictionaries (for temp 1 replica file fields)
     for key in z[0]:
-        values = [np.isinf(i[key]) for i in z]
+        values = [np.isinf(i[inverted_dict[key]]) for i in z]
         if any(values[int(0.1 * len(values)):]):  # arbitrary 10-percent cutoff
             return False, 'Infinity encountered after the first 10-percent of the frames'
         if any(values[:int(0.1 * len(values))]):
