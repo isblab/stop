@@ -65,6 +65,7 @@ def correct_mc_cumulative(mc_array, min_temp_exchanges):
 
 
 def parser(path):  # To parse all the stat files
+    inf = np.inf  # to handle parsing infinite scores. This should ideally be fixed in the modeling script
     files = os.listdir(path)
     # Load all the appropriately named files from the folder
     stat_files = [x for x in files if re.search(r'stat[.][0-9]+[.]out', x)]
@@ -159,6 +160,10 @@ def parser(path):  # To parse all the stat files
         x += main_array_replica[i][main_order[i]].tolist()
     z_replica = sorted(zip(collated_order, x))
     z_replica = [i[1] for i in z_replica]  # properly ordered list of dictionaries (for temp 1 replica file fields)
+    for key in z[0]:
+        values = [np.isinf(i[key]) for i in z]
+        if any(values[int(0.1 * len(values)):]):  # arbitrary 10-percent cutoff
+            return False, 'Infinity encountered after the first 10-percent of the frames'
     return True, (z, z_replica, main_array, main_array_replica, inverted_dict, inverted_dict_replica, main_order)
 
 
