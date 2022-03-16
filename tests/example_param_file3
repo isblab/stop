@@ -8,6 +8,7 @@ verbosity : 0
 max_depth : 4
 max_wait : 1
 plotting : 0
+csv_report : 1
 path : ./temp_data
 analysis_wrapper : testing_foo_analyzer2 : test_analysis
 METRIC : m0 : 0.48,0.5 : ignore

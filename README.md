@@ -54,7 +54,7 @@ One or more of the following options must be present in a valid input file. You 
 |`cleanup : <value>`|0, 1, 2|Whether to cleanup the stat files, stdout and stderr records of the different optimization runs or not. 0 implies no cleanup. It is strongly recommended to keep it to 0 unless there are space constraints|
 |`csv_report : <value>`|0, 1 (default = 0)| 0 -> Do not generate a csv-report, 1 -> generate a csv report. CSV report is generated per successful parameter-group, and is useful if you want to automatically take the optimized values of the parameters for downstream pipeline. No new information is present in these reports over the standard `report.txt`|
 |`n_per_command : <value>`|any integer| Number of processes spawned per command invocation. Relevant for `mpirun` based replica exchange. Allows for a better progress bar.|
-|`n_frames : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
+|`n_frames_per_run : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
 |`max_wait : <value>`|any integer (default = 60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|
 |`stopping_eq : <value>`|0, 1 (default = 0)| Whether to consider failing to equilibriate as an error during analysis. Only change this if you have a custom StOP setup|
 |`stopping_err : <value>`|0, 1 (default = 1)| Whether to stop if any of the runs throws an error during analysis. Only change this if you have a custom StOP setup|
