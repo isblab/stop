@@ -211,7 +211,8 @@ class ParameterGroup:
                     else:
                         lab = f'Depth {d}'
                     depths_taken[j].add(d)
-                    axs[j].scatter(p1, p2, c=cmapnew((mvals[j] - mn) / (mx - mn)), marker=marker_list[d % len(marker_list)],
+                    axs[j].scatter(p1, p2, c=cmapnew((mvals[j] - mn) / (mx - mn)),
+                                   marker=marker_list[d % len(marker_list)],
                                    label=lab, s=15, zorder=10)
             for i in range(len(self.metric_names)):
                 all_vals = np.hstack([x[self.metric_names[i]].flatten() for x in self.metric_values_nodes])
@@ -305,7 +306,8 @@ class ParameterGroup:
             norm = Normalize(vmin=mn, vmax=mx)
             fig, ax = plt.subplots()
             temp = sorted(zip(temp, temp_sd))
-            ax.scatter(np.arange(len(temp)), np.zeros(len(temp)), c=cmapnew((np.array([x[0] for x in temp]) - mn) / (mx - mn)),
+            ax.scatter(np.arange(len(temp)), np.zeros(len(temp)),
+                       c=cmapnew((np.array([x[0] for x in temp]) - mn) / (mx - mn)),
                        s=20, zorder=10)
             ax.errorbar(np.arange(len(temp)), np.zeros(len(temp)), yerr=[x[1] for x in temp], ecolor='black', capsize=3,
                         fmt='none', zorder=0)
@@ -481,6 +483,7 @@ class Optimizer:
         self.verbosity = int(params['verbosity'])
         self.cleanup = int(params['cleanup'])
         self.plotting = int(params['plotting'])
+        self.csv = int(params['csv_report'])
         # pre-setup
         self.num_groups = max(self.parameter_groups)
         self.parameter_group_objs = ParameterGroup.create_groups(self.parameter_names, self.parameter_groups,
@@ -715,7 +718,8 @@ class Optimizer:
             if self.verbosity >= 2:
                 progress_bar.update(self.repeat)
             if self.stop_eq and (not equilibriation_check):
-                message = (time.time(), 'ERROR', f'Failed equilibriation in {unequilibriated}. Terminating', 'OPTIMIZER')
+                message = (time.time(), 'ERROR', f'Failed equilibriation in {unequilibriated}. Terminating',
+                           'OPTIMIZER')
                 self.logger_queue.put(message)
                 print(f'ERROR: Terminating due to failed equilibriation: {unequilibriated}')
                 terminate = True
@@ -781,12 +785,21 @@ class Optimizer:
                     f.write('\t\tOptimal Parameters with corresponding metric values (and sd):\n')
                     temp = set([len(i.optimized_values[x]) for x in i.optimized_values])
                     assert (len(temp) == 1) or ((len(temp) == 2) and (1 in temp))
-                    for p in i.parameter_names:
-                        f.write(f'\t\t\tParam {p}: {i.optimized_values[p]}\n')
+                    max_name_size = max(max([len(p) for p in i.parameter_names]), 20)
+                    param_name_line = '  '.join([f'{p:^{max_name_size}s}' for p in i.parameter_names])
+                    f.write(f'\t\t\t{param_name_line}\n')
+                    nvals = max([len(i.optimized_values[p]) for p in i.parameter_names])
+                    for j in range(nvals):
+                        temp = i.optimized_values
+                        temp = [temp[p][j] if j < len(temp[p]) else temp[p][0] for p in i.parameter_names]
+                        vals = [f'{x:.2f}' for x in temp]
+                        vals = '  '.join([f'{v:^{max_name_size}}' for v in vals])
+                        f.write(f'\t\t\t{vals}\n')
                     for m in i.metric_names:
                         temp = []
                         for r in i.optimized_metric_values:
-                            temp.append(f'{self.analysis_results[r][m][0]} (+- {self.analysis_results[r][m][1]})')
+                            mn, sd = self.analysis_results[r][m]
+                            temp.append(f'{mn:.2f} (+- {sd:.2f})')
                         temp = ', '.join(temp)
                         f.write(f'\t\t\tMetric {m}: {temp}\n')
                 if i.state == -1:
@@ -799,3 +812,36 @@ class Optimizer:
             f.write('Input options: \n')
             for p in self.all_params:
                 f.write(f'\t{p} : {self.all_params[p]}\n')
+        if self.csv == 1:
+            self.csv_report()
+
+    def csv_report(self):
+        message = (time.time(), 'INFO', 'Generating CSV report', 'OPTIMIZER')
+        self.logger_queue.put(message)
+        for i in self.parameter_group_objs:
+            if i.state == 1:
+                to_be_printed = []
+                param_name_line = [p for p in i.parameter_names]
+                to_be_printed.append(param_name_line)
+                nvals = max([len(i.optimized_values[p]) for p in i.parameter_names])
+                for j in range(nvals):
+                    temp = i.optimized_values
+                    vals = [temp[p][j] if len(temp[p]) > j else temp[p][0] for p in i.parameter_names]
+                    to_be_printed.append(vals)
+                for m in i.metric_names:
+                    temp = []
+                    temp2 = []
+                    for r in i.optimized_metric_values:
+                        mn, sd = self.analysis_results[r][m]
+                        temp.append(mn)
+                        temp2.append(sd)
+                    temp = [f'{m}_mean'] + temp
+                    temp2 = [f'{m}_sd'] + temp2
+                    assert len(temp) == len(to_be_printed), 'Internal Error in CSV report generation in temp'
+                    assert len(temp2) == len(to_be_printed), 'Internal Error in CSV report generation in temp2'
+                    to_be_printed = [to_be_printed[i] + [temp[i]] for i in range(len(temp))]
+                    to_be_printed = [to_be_printed[i] + [temp2[i]] for i in range(len(temp2))]
+                with open(f'{self.output_path}/logs/csv_report_{i.group_id}.csv', 'w') as f:
+                    to_be_printed = [','.join([str(y) for y in x]) for x in to_be_printed]
+                    to_be_printed = '\n'.join(to_be_printed)
+                    f.write(to_be_printed)

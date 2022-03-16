@@ -52,6 +52,7 @@ One or more of the following options must be present in a valid input file. You 
 |`verbosity : <value>`|0, 1, 2| 0 -> 2 increasing verbosity of the progress|
 |`plotting : <value>`|0, 1, 2| 0 -> 2 increasing level of plotting|
 |`cleanup : <value>`|0, 1, 2|Whether to cleanup the stat files, stdout and stderr records of the different optimization runs or not. 0 implies no cleanup. It is strongly recommended to keep it to 0 unless there are space constraints|
+|`csv_report : <value>`|0, 1 (default = 0)| 0 -> Do not generate a csv-report, 1 -> generate a csv report. CSV report is generated per successful parameter-group, and is useful if you want to automatically take the optimized values of the parameters for downstream pipeline. No new information is present in these reports over the standard `report.txt`|
 |`n_per_command : <value>`|any integer| Number of processes spawned per command invocation. Relevant for `mpirun` based replica exchange. Allows for a better progress bar.|
 |`n_frames : <value>`|any integer| Number of frames per IMP run. Allows for a better progress bar.|
 |`max_wait : <value>`|any integer (default = 60)|Number of seconds to wait before polling each running subprocess for the current status. Also controls the rate of logging|

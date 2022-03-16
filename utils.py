@@ -242,7 +242,8 @@ option_defaults = dict([('m_1d', 3), ('max_np', None), ('verbosity', 2), ('stopp
                         ('stopping_param', 0), ('cleanup', 3), ('plotting', 3), ('stopping_err', 1),
                         ('max_wait', 10), ('repeat', 3), ('n_frames_per_run', None),
                         ('n_per_command', 1), ('analysis_wrapper', None), ('m_2d', None),
-                        ('m_3d', None), ('m_4d', None), ('m_5d', None), ('max_depth', 5), ('path', './')])
+                        ('m_3d', None), ('m_4d', None), ('m_5d', None), ('max_depth', 5), ('path', './'),
+                        ('csv_report', 0)])
 
 # The regex format checkers for the input options
 option_checks = dict([('m_1d', ['[0-9]+']), ('max_np', ['[0-9]+']), ('verbosity', ['(0|1|2)']),
@@ -255,7 +256,7 @@ option_checks = dict([('m_1d', ['[0-9]+']), ('max_np', ['[0-9]+']), ('verbosity'
                       ('PARAM', [r'^[0-9a-zA-Z_\-.]+$', '.*', r'^[\-]?[0-9]+[\.]?[0-9]*[ ,]+[\-]?[0-9]+[\.]?[0-9]*$']),
                       ('COMMAND', ['.*']), ('m_2d', ['[0-9]+']), ('m_3d', ['[0-9]+']), ('m_4d', ['[0-9]+']),
                       ('m_5d', ['[0-9]+']), ('max_depth', ['[0-9]+']),
-                      ('path', [r'^[/0-9a-zA-Z_\-.]+$']), ('stopping_err', ['(0|1)'])])
+                      ('path', [r'^[/0-9a-zA-Z_\-.]+$']), ('stopping_err', ['(0|1)']), ('csv_report', ['(0|1)'])])
 
 
 # Creating the Parameter-Metric groups based on Union-find
