@@ -522,6 +522,19 @@ class Optimizer:
     def progress_for_frames(self, run_number, frames):
         if self.verbosity < 2:
             return
+        if (not (self.n_frames_per_run is None)) and isinstance(frames, int) and (self.n_frames_per_run < frames):
+            warnings.warn(f'n_frames_per_run is mis-specified: {self.n_frames_per_run}, current frames: {frames}',
+                          RuntimeWarning)
+            message = (time.time(), 'WARNING', f'n_frames_per_run mis-specified: {self.n_frames_per_run}, {frames}',
+                       'OPTIMIZER')
+            self.logger_queue.put(message)
+            print('Shutting off verbosity (set to 1). Ignore the progress bars.')
+            for i in self.progress_tqdms:
+                if isinstance(i, tqdm):
+                    i.close()
+            self.progress_printing_status = 0
+            self.verbosity = 1
+            return
         if self.progress_printing_status == 0:
             self.progress_tqdms = []
             self.progress_tqdms.append(tqdm(desc='Number of runs finished', total=run_number, unit='run',
