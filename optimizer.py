@@ -678,8 +678,8 @@ class Optimizer:
                 self.logger_queue.put(ms)
                 if (message.return_code != 0) and self.stop_err:
                     terminate = True
-                    message = (time.time(), 'ERROR', 'Terminating the run due to non-zero exit code', 'OPTIMIZER')
-                    self.logger_queue.put(message)
+                    ms = (time.time(), 'ERROR', 'Terminating the run due to non-zero exit code', 'OPTIMIZER')
+                    self.logger_queue.put(ms)
                     print(f'ERROR: Terminating due to a non-zero return-code for one of the runs: {message.identifier}')
         if not terminate:
             terminate = self.analyze(fresh_for_analysis)
