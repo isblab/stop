@@ -229,7 +229,7 @@ class ParameterGroup:
                 norm = Normalize(vmin=mn, vmax=mx)
                 name = self.metric_names[i]
                 figs[i].colorbar(cm.ScalarMappable(norm=norm, cmap=cmapnew),
-                                 orientation='vertical')
+                                 orientation='vertical', ax=axs[i])
                 axs[i].set_title(f'Overall Progress for {name}')
                 axs[i].set_ylabel(f'{self.parameter_names[1]}')
                 axs[i].set_xlabel(f'{self.parameter_names[0]}')
@@ -317,7 +317,7 @@ class ParameterGroup:
             ax.set_xlabel('Sampled Metric Values')
             ax.set_ylabel('Size of +- 1 SD relative to the target range')
             fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmapnew),
-                         orientation='vertical')
+                         orientation='vertical', ax=ax)
             fig.savefig(f'{location}/{self.group_id}_{m}_sd_comparison.png')
             plt.close(fig)
 
