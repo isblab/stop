@@ -1,7 +1,6 @@
 # StOP: Stochastic Optimization of Parameters for IMP
 
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/isblab/stop.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/isblab/stop/context:python)
 ![cov](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Stochastic13/b7ce3f2fa674521d574e3830d7970724/raw/coverage_total.json)
 
 ![5z](https://user-images.githubusercontent.com/8314735/140460073-3093167c-dbc4-4560-bbb3-6e6c74d79124.png)
