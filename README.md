@@ -9,11 +9,11 @@
 StOP is a gradient-free, parallel, global, stochastic, multi-objective optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
 The code can be adapted to any suitable optimization problem.
 
-### Manuscript
+### Reference
 
 Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies. Life. 2021; 11(11):1183. https://doi.org/10.3390/life11111183
 
-Paper-related scripts and the explanation for the reproduction of figures can be found at the zenodo link [here](https://doi.org/10.5281/zenodo.5521444).
+Paper-related scripts and the explanation for the reproduction of figures can be found at [Zenodo](https://doi.org/10.5281/zenodo.5521444).
 
 ## Requirements
 Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. You can install all of them using `pip install -r requirements.txt`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
@@ -75,11 +75,3 @@ def foo(names_of_files, metric_names, param_search_names, plot):
 Here, `names_of_files` will be a list of the locations where the stat/replica_stat files are stored for each run (each member of the list corresponds to a separate run). `metric_names` are the names of the metrics that need to be analyzed and the `param_search_names` are the regex strings inputted in the options file. `plot` can be ignored. `error` evaluates to `True` if the analysis did not encounter any errors, and `False` otherwise (it is preferable to catch errors this way rather than raise the error). `equilibriation` is a dictionary with the keys being the elements of the list `names_of_files` and the values are booleans representing if the corresponding runs equilibriated (`True`) or not. `results` is a dictionary, the keys of which are the elements of the list `metric_names` and the value is a tuple (mean, sd) of the corresponding metric for the set of runs `names_of_files`. 
 
 The custom script can be added to the input options file as `analysis_wrapper : <name_of_file> : foo`
-
-## Upcoming changes
-
-1. ~A tutorial to optimize replica exchange maximum temperature~
-2. Cooler documentation!
-3. More comprehensive tests and ~coverage report badge on the readme~
-4. Sampling the inner regions of hyper-rectangles by allowing diagonal iterable ranges
-
