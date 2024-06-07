@@ -1,3 +1,10 @@
+\brief Stochastic optimization of sampling parameters for MCMC sampling in IMP
+
+[![PubMed](https://salilab.org/imp-systems/static/images/pubmed.png)](https://pubmed.ncbi.nlm.nih.gov/34833059/)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5521444.svg)](https://doi.org/10.5281/zenodo.5521444)
+
+
 # StOP: Stochastic Optimization of Parameters for IMP
 
 ![main workflow](https://github.com/isblab/stop/actions/workflows/pytest.yml/badge.svg)
@@ -5,20 +12,19 @@
 
 ![5z](https://user-images.githubusercontent.com/8314735/140460073-3093167c-dbc4-4560-bbb3-6e6c74d79124.png)
 
-## About
 StOP is a gradient-free, parallel, global, stochastic, multi-objective optimization algorithm primarily written to optimize the MCMC (Markov Chain Monte Carlo) sampling parameters for the Integrative Modeling Platform, [IMP](https://integrativemodeling.org). 
 The code can be adapted to any suitable optimization problem.
 
-### Reference
 
-Pasani S, Viswanath S. A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies. Life. 2021; 11(11):1183. https://doi.org/10.3390/life11111183
+## Publication and Data
+* Satwik Pasani, Shruthi Viswanath, __A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies__, _Life_, 11 (11): 1183, 2021, at [DOI](https://doi.org/10.3390/life11111183).
+* Data (scripts and the explanation for the reproduction of figures) is deposited in [Zenodo](https://www.doi.org/10.5281/zenodo.5521444)
+  
+## Dependencies
+Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. 
+You can install all of them using `pip install -r requirements.txt`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
 
-Paper-related scripts and the explanation for the reproduction of figures can be found at [Zenodo](https://doi.org/10.5281/zenodo.5521444).
-
-## Requirements
-Apart from `python3` and a `linux` system, the code requires the following python modules: `scipy`, `numpy`, `matplotlib`, `tqdm`. You can install all of them using `pip install -r requirements.txt`. While the code is `windows`-compatible for most part, multiple `subprocess` spawning unreliably ends up with a memory error when `max_np > 1`. This is currently an open issue.
-
-## Installation and General Usage
+## Running StOP
 1. Make sure all the necessary modules are installed
 2. Clone the repository or copy the files `main,py`, `utils.py`, `optimizer.py` and, optionally, depending on your usage, `analyzer.py` to a directory of your choosing
 3. Create an input file with runtime options and the parameter/metric inputs (described below)
@@ -75,3 +81,20 @@ def foo(names_of_files, metric_names, param_search_names, plot):
 Here, `names_of_files` will be a list of the locations where the stat/replica_stat files are stored for each run (each member of the list corresponds to a separate run). `metric_names` are the names of the metrics that need to be analyzed and the `param_search_names` are the regex strings inputted in the options file. `plot` can be ignored. `error` evaluates to `True` if the analysis did not encounter any errors, and `False` otherwise (it is preferable to catch errors this way rather than raise the error). `equilibriation` is a dictionary with the keys being the elements of the list `names_of_files` and the values are booleans representing if the corresponding runs equilibriated (`True`) or not. `results` is a dictionary, the keys of which are the elements of the list `metric_names` and the value is a tuple (mean, sd) of the corresponding metric for the set of runs `names_of_files`. 
 
 The custom script can be added to the input options file as `analysis_wrapper : <name_of_file> : foo`
+
+## Information
+__Author(s):__ Satwik Pasani, Shruthi Viswanath
+
+__Date__: June 7th, 2024
+
+__License:__ [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License.
+
+__Last known good IMP version:__ `not tested`
+
+__Testable:__ Yes
+
+__Parallelizeable:__ Yes
+
+__Publications:__  Satwik Pasani, Shruthi Viswanath, A Framework for Stochastic Optimization of Parameters for Integrative Modeling of Macromolecular Assemblies, Life, 11 (11): 1183, 2021. [DOI](https://doi.org/10.3390/life11111183). 
