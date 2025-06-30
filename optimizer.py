@@ -147,7 +147,7 @@ class ParameterGroup:
         m_nd_vals = dict()
         for j in self.metric_names:
             m_nd_vals[j] = np.zeros(tuple(m for i in range(n_params)), dtype=np.float32)
-            m_nd_vals[j][:] = np.NaN
+            m_nd_vals[j][:] = np.nan
         self.metric_values_nodes.append(m_nd_vals)
         self.metric_values_nodes_sd.append(copy.deepcopy(m_nd_vals))
         self.node_status.append(0)
@@ -409,13 +409,13 @@ class ParameterGroup:
                 self.node_depth.append(self.node_depth[self.current_node] + 1)
                 run_numbers_recycled = run_number_matrix[point_indices]  # the run numbers inherited from the parent
                 runs = [run_numbers_recycled[0]]
-                runs += [np.NaN for i in range(m_1d)]
+                runs += [np.nan for i in range(m_1d)]
                 runs += [run_numbers_recycled[1]]
                 self.node_run_numbers.append(np.array(runs))
                 m_nd_vals = dict()
                 for j in self.metric_names:
                     m_nd_vals[j] = np.zeros(m_1d + 2, dtype=np.float32)
-                    m_nd_vals[j][:] = np.NaN
+                    m_nd_vals[j][:] = np.nan
                 self.metric_values_nodes.append(m_nd_vals)
                 self.metric_values_nodes_sd.append(copy.deepcopy(m_nd_vals))
             self.node_status[self.current_node] = -1

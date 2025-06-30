@@ -56,7 +56,7 @@ def correct_mc_cumulative(mc_array, min_temp_exchanges):
         corrected_array = np.array(corrected_array)
         # At all exchanges, the replica changes, and hence, the numbers are not valid
         # TODO: Does the exchange happen before or after the MC steps? This changes which all entries to NaN out
-        corrected_array[np.array(min_temp_exchanges)] = np.NAN
+        corrected_array[np.array(min_temp_exchanges)] = np.nan
         if np.sum(np.isnan(corrected_array)) > 0.8 * len(corrected_array):
             adjusted_mc_array.append(np.array(sub_mc))
             continue
