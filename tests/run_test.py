@@ -26,7 +26,7 @@ def test_runexamples_1():
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file'], text=True, capture_output=True)
     assert s.returncode == 0
-    assert os.path.isfile('./temp_data/logs/report.txt')
+    assert os.path.isfile('./temp_data/logs/report.txt'), f"{os.listdir('./temp_data')}\t{os.listdir('./temp_data/logs')}"
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 4, rd
@@ -40,7 +40,7 @@ def test_runexamples_2():
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file2'], text=True, capture_output=True)
     assert s.returncode == 0
-    assert os.path.isfile('./temp_data/logs/report.txt')
+    assert os.path.isfile('./temp_data/logs/report.txt'), f"{os.listdir('./temp_data')}\t{os.listdir('./temp_data/logs')}"
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 2, rd
@@ -53,7 +53,7 @@ def test_runexamples_3d():
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file3d'], text=True, capture_output=True)
     assert s.returncode == 0
-    assert os.path.isfile('./temp_data/logs/report.txt')
+    assert os.path.isfile('./temp_data/logs/report.txt'), f"{os.listdir('./temp_data')}\t{os.listdir('./temp_data/logs')}"
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: Successful' in x]) == 1, rd
@@ -66,7 +66,7 @@ def test_runexamples_3():
     os.mkdir('./temp_data')
     s = subprocess.run(['python', '../main.py', 'example_param_file3'], text=True, capture_output=True)
     assert s.returncode == 0
-    assert os.path.isfile('./temp_data/logs/report.txt')
+    assert os.path.isfile('./temp_data/logs/report.txt'), f"{os.listdir('./temp_data')}\t{os.listdir('./temp_data/logs')}"
     with open('./temp_data/logs/report.txt') as f:
         rd = f.read().split('\n')
         assert len([x for x in rd if 'Optimization Status: ' in x]) == 100, rd
